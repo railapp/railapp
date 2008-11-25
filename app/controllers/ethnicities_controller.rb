@@ -1,0 +1,2 @@
+class EthnicitiesController < ApplicationController
+end
