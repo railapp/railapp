@@ -34,7 +34,7 @@ Rails::Initializer.run do |config|
   # config.plugins = [ :exception_notification, :ssl_requirement, :all ]
 
   # Add additional load paths for your own custom dirs
-  config.load_paths += %W( #{RAILS_ROOT}/lib/)
+  config.load_paths += %W( #{RAILS_ROOT}/lib/ruby-extensions #{RAILS_ROOT}/lib/rails-extensions )
 
 
   # Force all environments to use the same logger level
