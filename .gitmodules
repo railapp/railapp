@@ -1,0 +1,3 @@
+[submodule "vendor/plugins/userstamp"]
+	path = vendor/plugins/userstamp
+	url = git://github.com/delynn/userstamp.git
