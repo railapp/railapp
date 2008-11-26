@@ -3865,3 +3865,490 @@ Migrating to CreateNeighborhoods (20080101010107)
   [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
   [4;36;1mCity Create (0.2ms)[0m   [0;1mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Karachi', '2008-11-26 03:29:23', NULL, NULL, NULL, 'PK', NULL, NULL, 11800000, 1100, NULL, '2008-11-26 03:29:23')[0m
   [4;35;1mSQL (12.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20080101010101)
+Migrating to CreateRoles (20080101010102)
+Migrating to CreateUsersRoles (20080101010103)
+Migrating to CreateCountries (20080101010104)
+Migrating to CreateProvinces (20080101010105)
+Migrating to CreateCities (20080101010106)
+Migrating to CreateNeighborhoods (20080101010107)
+Migrating to CreateLanguages (20080101010108)
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (6.9ms)[0m   [0;1mCREATE TABLE `languages` (`id` varchar(2) NOT NULL, `created_at` datetime, `updated_at` datetime, `creator_id` int(11), `updater_id` int(11), `name` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (57.1ms)[0m   [0mALTER TABLE languages ADD PRIMARY KEY (id)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Duplicate key name 'index_countries_on_name': CREATE INDEX `index_countries_on_name` ON `countries` (`name`)[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20080101010101)
+Migrating to CreateRoles (20080101010102)
+Migrating to CreateUsersRoles (20080101010103)
+Migrating to CreateCountries (20080101010104)
+Migrating to CreateProvinces (20080101010105)
+Migrating to CreateCities (20080101010106)
+Migrating to CreateNeighborhoods (20080101010107)
+Migrating to CreateLanguages (20080101010108)
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (26.3ms)[0m   [0;1mDROP TABLE `languages`[0m
+  [4;35;1mSQL (24.4ms)[0m   [0mCREATE TABLE `languages` (`id` varchar(2) NOT NULL, `created_at` datetime, `updated_at` datetime, `creator_id` int(11), `updater_id` int(11), `name` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (5.6ms)[0m   [0;1mALTER TABLE languages ADD PRIMARY KEY (id)[0m
+  [4;35;1mSQL (5.9ms)[0m   [0mCREATE INDEX `index_languages_on_name` ON `languages` (`name`)[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080101010108')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `cities`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `cities`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW KEYS FROM `cities`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `countries`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mdescribe `countries`[0m
+  [4;35;1mSQL (8.3ms)[0m   [0mSHOW KEYS FROM `countries`[0m
+  [4;36;1mSQL (8.9ms)[0m   [0;1mSHOW FIELDS FROM `languages`[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mdescribe `languages`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `languages`[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mSHOW FIELDS FROM `neighborhoods`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mdescribe `neighborhoods`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW KEYS FROM `neighborhoods`[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mSHOW FIELDS FROM `provinces`[0m
+  [4;35;1mSQL (3.7ms)[0m   [0mdescribe `provinces`[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mSHOW KEYS FROM `provinces`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mSQL (57.5ms)[0m   [0;1mdescribe `roles`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `roles`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `users_roles`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `users_roles`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `users_roles`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mLanguage Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `languages`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.3ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Abkhazian', '2008-11-26 08:11:46', NULL, 'ab', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (5.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Afar', '2008-11-26 08:11:46', NULL, 'aa', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.1ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Afrikaans', '2008-11-26 08:11:46', NULL, 'af', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (31.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Albanian', '2008-11-26 08:11:46', NULL, 'sq', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.1ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Amharic', '2008-11-26 08:11:46', NULL, 'am', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.1ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Arabic', '2008-11-26 08:11:46', NULL, 'ar', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.1ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Armenian', '2008-11-26 08:11:46', NULL, 'hy', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.1ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Assamese', '2008-11-26 08:11:46', NULL, 'as', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.1ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Aymara', '2008-11-26 08:11:46', NULL, 'ay', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.1ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Azerbaijani', '2008-11-26 08:11:46', NULL, 'az', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.1ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Bashkir', '2008-11-26 08:11:46', NULL, 'ba', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.1ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Basque', '2008-11-26 08:11:46', NULL, 'eu', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.1ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Bengali', '2008-11-26 08:11:46', NULL, 'bn', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.1ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Bhutani', '2008-11-26 08:11:46', NULL, 'dz', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.1ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Bihari', '2008-11-26 08:11:46', NULL, 'bh', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.1ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Bislama', '2008-11-26 08:11:46', NULL, 'bi', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Breton', '2008-11-26 08:11:46', NULL, 'br', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.1ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Bulgarian', '2008-11-26 08:11:46', NULL, 'bg', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.3ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Burmese', '2008-11-26 08:11:46', NULL, 'my', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Byelorussian', '2008-11-26 08:11:46', NULL, 'be', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (5.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Cambodian', '2008-11-26 08:11:46', NULL, 'km', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Catalan', '2008-11-26 08:11:46', NULL, 'ca', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Chinese', '2008-11-26 08:11:46', NULL, 'zh', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Corsican', '2008-11-26 08:11:46', NULL, 'co', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Croatian', '2008-11-26 08:11:46', NULL, 'hr', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Czech', '2008-11-26 08:11:46', NULL, 'cs', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Danish', '2008-11-26 08:11:46', NULL, 'da', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (19.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Dutch', '2008-11-26 08:11:46', NULL, 'nl', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('English', '2008-11-26 08:11:46', NULL, 'en', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Esperanto', '2008-11-26 08:11:46', NULL, 'eo', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Estonian', '2008-11-26 08:11:46', NULL, 'et', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Faeroese', '2008-11-26 08:11:46', NULL, 'fo', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Fiji', '2008-11-26 08:11:46', NULL, 'fj', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Finnish', '2008-11-26 08:11:46', NULL, 'fi', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('French', '2008-11-26 08:11:46', NULL, 'fr', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Frisian', '2008-11-26 08:11:46', NULL, 'fy', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Galician', '2008-11-26 08:11:46', NULL, 'gl', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Georgian', '2008-11-26 08:11:46', NULL, 'ka', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.3ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('German', '2008-11-26 08:11:46', NULL, 'de', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Greek', '2008-11-26 08:11:46', NULL, 'el', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Greenlandic', '2008-11-26 08:11:46', NULL, 'kl', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Guarani', '2008-11-26 08:11:46', NULL, 'gn', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.1ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Gujarati', '2008-11-26 08:11:46', NULL, 'gu', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Hausa', '2008-11-26 08:11:46', NULL, 'ha', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Hebrew', '2008-11-26 08:11:46', NULL, 'he', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Hebrew', '2008-11-26 08:11:46', NULL, 'iw', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Hindi', '2008-11-26 08:11:46', NULL, 'hi', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Hungarian', '2008-11-26 08:11:46', NULL, 'hu', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Icelandic', '2008-11-26 08:11:46', NULL, 'is', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Indonesian', '2008-11-26 08:11:46', NULL, 'id', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Indonesian', '2008-11-26 08:11:46', NULL, 'in', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Interlingua', '2008-11-26 08:11:46', NULL, 'ia', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Interlingue', '2008-11-26 08:11:46', NULL, 'ie', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Inukitut', '2008-11-26 08:11:46', NULL, 'iu', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Inupiak', '2008-11-26 08:11:46', NULL, 'ik', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Irish', '2008-11-26 08:11:46', NULL, 'ga', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Italian', '2008-11-26 08:11:46', NULL, 'it', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Japanese', '2008-11-26 08:11:46', NULL, 'ja', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Javanese', '2008-11-26 08:11:46', NULL, 'jw', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.3ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Kannada', '2008-11-26 08:11:46', NULL, 'kn', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Kashmiri', '2008-11-26 08:11:46', NULL, 'ks', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Kazakh', '2008-11-26 08:11:46', NULL, 'kk', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Kinyarwanda', '2008-11-26 08:11:46', NULL, 'rw', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Kirghiz', '2008-11-26 08:11:46', NULL, 'ky', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Kirundi', '2008-11-26 08:11:46', NULL, 'rn', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Korean', '2008-11-26 08:11:46', NULL, 'ko', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (18.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Kurdish', '2008-11-26 08:11:46', NULL, 'ku', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Laothian', '2008-11-26 08:11:46', NULL, 'lo', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Latin', '2008-11-26 08:11:46', NULL, 'la', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (5.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Latvian (Lettish)', '2008-11-26 08:11:46', NULL, 'lv', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.3ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Lingala', '2008-11-26 08:11:46', NULL, 'ln', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Lithuanian', '2008-11-26 08:11:46', NULL, 'lt', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (5.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Macedonian', '2008-11-26 08:11:46', NULL, 'mk', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Malagasy', '2008-11-26 08:11:46', NULL, 'mg', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (6.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Malay', '2008-11-26 08:11:46', NULL, 'ms', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Malayalam', '2008-11-26 08:11:46', NULL, 'ml', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (6.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Maltese', '2008-11-26 08:11:46', NULL, 'mt', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Maori', '2008-11-26 08:11:46', NULL, 'mi', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (6.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Marathi', '2008-11-26 08:11:46', NULL, 'mr', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Moldavian', '2008-11-26 08:11:46', NULL, 'mo', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (6.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Mongolian', '2008-11-26 08:11:46', NULL, 'mn', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Nauru', '2008-11-26 08:11:46', NULL, 'na', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (6.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.6ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Nepali', '2008-11-26 08:11:46', NULL, 'ne', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Norwegian', '2008-11-26 08:11:46', NULL, 'no', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (6.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Occitan', '2008-11-26 08:11:46', NULL, 'oc', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Oriya', '2008-11-26 08:11:46', NULL, 'or', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Oromo (Afan)', '2008-11-26 08:11:46', NULL, 'om', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Pashto (Pushto)', '2008-11-26 08:11:46', NULL, 'ps', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Persian', '2008-11-26 08:11:46', NULL, 'fa', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Polish', '2008-11-26 08:11:46', NULL, 'pl', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Portuguese', '2008-11-26 08:11:46', NULL, 'pt', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Punjabi', '2008-11-26 08:11:46', NULL, 'pa', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Quechua', '2008-11-26 08:11:46', NULL, 'qu', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Rhaeto-Romance', '2008-11-26 08:11:46', NULL, 'rm', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Romanian', '2008-11-26 08:11:46', NULL, 'ro', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (6.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Russian', '2008-11-26 08:11:46', NULL, 'ru', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Samoan', '2008-11-26 08:11:46', NULL, 'sm', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (6.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Sangro', '2008-11-26 08:11:46', NULL, 'sg', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Sanskrit', '2008-11-26 08:11:46', NULL, 'sa', NULL, '2008-11-26 08:11:46')[0m
+  [4;36;1mSQL (6.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Scots Gaelic', '2008-11-26 08:11:46', NULL, 'gd', NULL, '2008-11-26 08:11:46')[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Serbian', '2008-11-26 08:11:47', NULL, 'sr', NULL, '2008-11-26 08:11:47')[0m
+  [4;36;1mSQL (5.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Serbo-Croatian', '2008-11-26 08:11:47', NULL, 'sh', NULL, '2008-11-26 08:11:47')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Sesotho', '2008-11-26 08:11:47', NULL, 'st', NULL, '2008-11-26 08:11:47')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Setswana', '2008-11-26 08:11:47', NULL, 'tn', NULL, '2008-11-26 08:11:47')[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.4ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Shona', '2008-11-26 08:11:47', NULL, 'sn', NULL, '2008-11-26 08:11:47')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.3ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Sindhi', '2008-11-26 08:11:47', NULL, 'sd', NULL, '2008-11-26 08:11:47')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.6ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Singhalese', '2008-11-26 08:11:47', NULL, 'si', NULL, '2008-11-26 08:11:47')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.4ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Siswati', '2008-11-26 08:11:47', NULL, 'ss', NULL, '2008-11-26 08:11:47')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Slovak', '2008-11-26 08:11:47', NULL, 'sk', NULL, '2008-11-26 08:11:47')[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Slovenian', '2008-11-26 08:11:47', NULL, 'sl', NULL, '2008-11-26 08:11:47')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.1ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Somali', '2008-11-26 08:11:47', NULL, 'so', NULL, '2008-11-26 08:11:47')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.1ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Spanish', '2008-11-26 08:11:47', NULL, 'es', NULL, '2008-11-26 08:11:47')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.1ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Sundanese', '2008-11-26 08:11:47', NULL, 'su', NULL, '2008-11-26 08:11:47')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Swahili', '2008-11-26 08:11:47', NULL, 'sw', NULL, '2008-11-26 08:11:47')[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Swedish', '2008-11-26 08:11:47', NULL, 'sv', NULL, '2008-11-26 08:11:47')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.1ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Tagalog', '2008-11-26 08:11:47', NULL, 'tl', NULL, '2008-11-26 08:11:47')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.1ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Tajik', '2008-11-26 08:11:47', NULL, 'tg', NULL, '2008-11-26 08:11:47')[0m
+  [4;36;1mSQL (6.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Tamil', '2008-11-26 08:11:47', NULL, 'ta', NULL, '2008-11-26 08:11:47')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.1ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Tatar', '2008-11-26 08:11:47', NULL, 'tt', NULL, '2008-11-26 08:11:47')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.1ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Telugu', '2008-11-26 08:11:47', NULL, 'te', NULL, '2008-11-26 08:11:47')[0m
+  [4;35;1mSQL (6.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.1ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Thai', '2008-11-26 08:11:47', NULL, 'th', NULL, '2008-11-26 08:11:47')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.1ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Tibetan', '2008-11-26 08:11:47', NULL, 'bo', NULL, '2008-11-26 08:11:47')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.1ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Tigrinya', '2008-11-26 08:11:47', NULL, 'ti', NULL, '2008-11-26 08:11:47')[0m
+  [4;36;1mSQL (6.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Tonga', '2008-11-26 08:11:47', NULL, 'to', NULL, '2008-11-26 08:11:47')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Tsonga', '2008-11-26 08:11:47', NULL, 'ts', NULL, '2008-11-26 08:11:47')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.1ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Turkish', '2008-11-26 08:11:47', NULL, 'tr', NULL, '2008-11-26 08:11:47')[0m
+  [4;35;1mSQL (6.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Turkmen', '2008-11-26 08:11:47', NULL, 'tk', NULL, '2008-11-26 08:11:47')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Twi', '2008-11-26 08:11:47', NULL, 'tw', NULL, '2008-11-26 08:11:47')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Uighur', '2008-11-26 08:11:47', NULL, 'ug', NULL, '2008-11-26 08:11:47')[0m
+  [4;36;1mSQL (6.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Ukrainian', '2008-11-26 08:11:47', NULL, 'uk', NULL, '2008-11-26 08:11:47')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.2ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Urdu', '2008-11-26 08:11:47', NULL, 'ur', NULL, '2008-11-26 08:11:47')[0m
+  [4;36;1mSQL (8.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Uzbek', '2008-11-26 08:11:47', NULL, 'uz', NULL, '2008-11-26 08:11:47')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.4ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Vietnamese', '2008-11-26 08:11:47', NULL, 'vi', NULL, '2008-11-26 08:11:47')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Volapuk', '2008-11-26 08:11:47', NULL, 'vo', NULL, '2008-11-26 08:11:47')[0m
+  [4;35;1mSQL (5.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.3ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Welsh', '2008-11-26 08:11:47', NULL, 'cy', NULL, '2008-11-26 08:11:47')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.3ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Wolof', '2008-11-26 08:11:47', NULL, 'wo', NULL, '2008-11-26 08:11:47')[0m
+  [4;35;1mSQL (5.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.3ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Xhosa', '2008-11-26 08:11:47', NULL, 'xh', NULL, '2008-11-26 08:11:47')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.2ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Yiddish', '2008-11-26 08:11:47', NULL, 'ji', NULL, '2008-11-26 08:11:47')[0m
+  [4;35;1mSQL (5.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.3ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Yiddish', '2008-11-26 08:11:47', NULL, 'yi', NULL, '2008-11-26 08:11:47')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.3ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Yoruba', '2008-11-26 08:11:47', NULL, 'yo', NULL, '2008-11-26 08:11:47')[0m
+  [4;35;1mSQL (5.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mLanguage Create (0.3ms)[0m   [0mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Zhuang', '2008-11-26 08:11:47', NULL, 'za', NULL, '2008-11-26 08:11:47')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mLanguage Create (0.3ms)[0m   [0;1mINSERT INTO `languages` (`name`, `updated_at`, `creator_id`, `id`, `updater_id`, `created_at`) VALUES('Zulu', '2008-11-26 08:11:47', NULL, 'zu', NULL, '2008-11-26 08:11:47')[0m
+  [4;35;1mSQL (5.1ms)[0m   [0mCOMMIT[0m

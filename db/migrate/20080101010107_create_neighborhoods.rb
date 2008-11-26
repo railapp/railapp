@@ -9,6 +9,7 @@ class CreateNeighborhoods < ActiveRecord::Migration
       t.column :latitude,    :float
       t.column :longitude,   :float
       t.column :population,  :integer
+      t.column :area,        :integer
       t.column :city_id,     :integer
     end
 
@@ -16,6 +17,7 @@ class CreateNeighborhoods < ActiveRecord::Migration
     add_index :neighborhoods, :latitude
     add_index :neighborhoods, :longitude
     add_index :neighborhoods, :population
+    add_index :neighborhoods, :area
     add_index :neighborhoods, :city_id
 
   end
