@@ -19,13 +19,15 @@ ActiveRecord::Schema.define(:version => 20080101010107) do
     t.string   "name",                      :null => false
     t.float    "latitude"
     t.float    "longitude"
-    t.integer  "province_id"
-    t.integer  "country_id"
+    t.string   "province_id",  :limit => 6
+    t.string   "country_id",   :limit => 2, :null => false
     t.string   "airport_code", :limit => 3
     t.integer  "population"
+    t.integer  "area"
   end
 
   add_index "cities", ["airport_code"], :name => "index_cities_on_airport_code"
+  add_index "cities", ["area"], :name => "index_cities_on_area"
   add_index "cities", ["country_id"], :name => "index_cities_on_country_id"
   add_index "cities", ["latitude"], :name => "index_cities_on_latitude"
   add_index "cities", ["longitude"], :name => "index_cities_on_longitude"
@@ -42,8 +44,10 @@ ActiveRecord::Schema.define(:version => 20080101010107) do
     t.float    "latitude"
     t.float    "longitude"
     t.integer  "population"
+    t.integer  "area"
   end
 
+  add_index "countries", ["area"], :name => "index_countries_on_area"
   add_index "countries", ["latitude"], :name => "index_countries_on_latitude"
   add_index "countries", ["longitude"], :name => "index_countries_on_longitude"
   add_index "countries", ["name"], :name => "index_countries_on_name"
@@ -78,8 +82,10 @@ ActiveRecord::Schema.define(:version => 20080101010107) do
     t.float    "latitude"
     t.float    "longitude"
     t.integer  "population"
+    t.integer  "area"
   end
 
+  add_index "provinces", ["area"], :name => "index_provinces_on_area"
   add_index "provinces", ["code"], :name => "index_provinces_on_code"
   add_index "provinces", ["country_id"], :name => "index_provinces_on_country_id"
   add_index "provinces", ["latitude"], :name => "index_provinces_on_latitude"

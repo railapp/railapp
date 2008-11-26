@@ -14,6 +14,7 @@ class CreateProvinces < ActiveRecord::Migration
       t.column :latitude,   :float
       t.column :longitude,  :float
       t.column :population, :integer
+      t.column :area,       :integer
     end
 
     execute("ALTER TABLE provinces ADD PRIMARY KEY (id)")
@@ -24,6 +25,7 @@ class CreateProvinces < ActiveRecord::Migration
     add_index :provinces, :latitude
     add_index :provinces, :longitude
     add_index :provinces, :population
+    add_index :provinces, :area
 
   end
 

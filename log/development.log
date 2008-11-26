@@ -2548,3 +2548,1320 @@ Migrating to CreateNeighborhoods (20080101010107)
   [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
   [4;35;1mProvince Create (0.4ms)[0m   [0mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('Yukon Territory', '2008-11-26 01:18:00', NULL, 'YT', NULL, 'CA', 'CA-YT', NULL, NULL, NULL, '2008-11-26 01:18:00')[0m
   [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mCity Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `cities`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mCity Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `cities`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('Tokyo', '2008-11-26 03:25:32', NULL, NULL, NULL, 0, NULL, NULL, 32450000, NULL, '2008-11-26 03:25:32')[0m
+  [4;36;1mSQL (49.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.3ms)[0m   [0;1mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('KR', '2008-11-26 03:25:32', NULL, NULL, NULL, 8014, NULL, NULL, 0, NULL, '2008-11-26 03:25:32')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.2ms)[0m   [0mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES(5076, '2008-11-26 03:25:32', NULL, NULL, NULL, 20550000, NULL, NULL, 0, NULL, '2008-11-26 03:25:32')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.2ms)[0m   [0;1mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES(20450000, '2008-11-26 03:25:32', NULL, NULL, NULL, 0, NULL, NULL, 7346, NULL, '2008-11-26 03:25:32')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.2ms)[0m   [0mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('New York City', '2008-11-26 03:25:32', NULL, NULL, NULL, 0, NULL, NULL, 19750000, NULL, '2008-11-26 03:25:32')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.2ms)[0m   [0;1mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('IN', '2008-11-26 03:25:32', NULL, NULL, NULL, 17884, NULL, NULL, 0, NULL, '2008-11-26 03:25:32')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.2ms)[0m   [0mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES(2350, '2008-11-26 03:25:32', NULL, NULL, NULL, 19200000, NULL, NULL, 0, NULL, '2008-11-26 03:25:32')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.2ms)[0m   [0;1mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES(18900000, '2008-11-26 03:25:32', NULL, NULL, NULL, 0, NULL, NULL, 5100, NULL, '2008-11-26 03:25:32')[0m
+  [4;35;1mSQL (6.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('Sao Paulo', '2008-11-26 03:25:32', NULL, NULL, NULL, 0, NULL, NULL, 18850000, NULL, '2008-11-26 03:25:32')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('IN', '2008-11-26 03:25:32', NULL, NULL, NULL, 8479, NULL, NULL, 0, NULL, '2008-11-26 03:25:32')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES(3182, '2008-11-26 03:25:32', NULL, NULL, NULL, 18600000, NULL, NULL, 0, NULL, '2008-11-26 03:25:32')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.3ms)[0m   [0;1mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES(17375000, '2008-11-26 03:25:32', NULL, NULL, NULL, 0, NULL, NULL, 6930, NULL, '2008-11-26 03:25:32')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('Shanghai', '2008-11-26 03:25:32', NULL, NULL, NULL, 0, NULL, NULL, 16650000, NULL, '2008-11-26 03:25:32')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.3ms)[0m   [0;1mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('PH', '2008-11-26 03:25:32', NULL, NULL, NULL, 5177, NULL, NULL, 0, NULL, '2008-11-26 03:25:32')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES(2521, '2008-11-26 03:25:32', NULL, NULL, NULL, 16300000, NULL, NULL, 0, NULL, '2008-11-26 03:25:32')[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES(15800000, '2008-11-26 03:25:32', NULL, NULL, NULL, 0, NULL, NULL, 3051, NULL, '2008-11-26 03:25:32')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.3ms)[0m   [0mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('Los Angeles', '2008-11-26 03:25:32', NULL, NULL, NULL, 0, NULL, NULL, 15250000, NULL, '2008-11-26 03:25:32')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.9ms)[0m   [0;1mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('IN', '2008-11-26 03:25:32', NULL, NULL, NULL, 10780, NULL, NULL, 0, NULL, '2008-11-26 03:25:32')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (1.0ms)[0m   [0mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES(1785, '2008-11-26 03:25:32', NULL, NULL, NULL, 15100000, NULL, NULL, 0, NULL, '2008-11-26 03:25:32')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES(15000000, '2008-11-26 03:25:32', NULL, NULL, NULL, 0, NULL, NULL, 14925, NULL, '2008-11-26 03:25:32')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.3ms)[0m   [0mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('Cairo', '2008-11-26 03:25:32', NULL, NULL, NULL, 0, NULL, NULL, 14450000, NULL, '2008-11-26 03:25:32')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.3ms)[0m   [0;1mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('AR', '2008-11-26 03:25:32', NULL, NULL, NULL, 1600, NULL, NULL, 0, NULL, '2008-11-26 03:25:32')[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.5ms)[0m   [0mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES(10888, '2008-11-26 03:25:32', NULL, NULL, NULL, 13170000, NULL, NULL, 0, NULL, '2008-11-26 03:25:32')[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.5ms)[0m   [0;1mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES(12875000, '2008-11-26 03:25:32', NULL, NULL, NULL, 0, NULL, NULL, 11391, NULL, '2008-11-26 03:25:32')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.5ms)[0m   [0mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('Beijing', '2008-11-26 03:25:32', NULL, NULL, NULL, 0, NULL, NULL, 12500000, NULL, '2008-11-26 03:25:32')[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.5ms)[0m   [0;1mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('PK', '2008-11-26 03:25:32', NULL, NULL, NULL, 6562, NULL, NULL, 0, NULL, '2008-11-26 03:25:32')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.3ms)[0m   [0mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES(1100, '2008-11-26 03:25:32', NULL, NULL, NULL, 11800000, NULL, NULL, NULL, NULL, '2008-11-26 03:25:32')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mCity Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `cities`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.3ms)[0m   [0mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('Tokyo', '2008-11-26 03:26:14', NULL, NULL, NULL, 0, NULL, NULL, 32450000, NULL, '2008-11-26 03:26:14')[0m
+  [4;36;1mSQL (28.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.8ms)[0m   [0;1mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('Seoul', '2008-11-26 03:26:14', NULL, NULL, NULL, 0, NULL, NULL, 20550000, NULL, '2008-11-26 03:26:14')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.3ms)[0m   [0mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('Mexico City', '2008-11-26 03:26:14', NULL, NULL, NULL, 0, NULL, NULL, 20450000, NULL, '2008-11-26 03:26:14')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.4ms)[0m   [0;1mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('New York City', '2008-11-26 03:26:14', NULL, NULL, NULL, 0, NULL, NULL, 19750000, NULL, '2008-11-26 03:26:14')[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.6ms)[0m   [0mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('Mumbai', '2008-11-26 03:26:14', NULL, NULL, NULL, 0, NULL, NULL, 19200000, NULL, '2008-11-26 03:26:14')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.3ms)[0m   [0;1mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('Jakarta', '2008-11-26 03:26:14', NULL, NULL, NULL, 0, NULL, NULL, 18900000, NULL, '2008-11-26 03:26:14')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.2ms)[0m   [0mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('Sao Paulo', '2008-11-26 03:26:14', NULL, NULL, NULL, 0, NULL, NULL, 18850000, NULL, '2008-11-26 03:26:14')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.2ms)[0m   [0;1mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('Delhi', '2008-11-26 03:26:14', NULL, NULL, NULL, 0, NULL, NULL, 18600000, NULL, '2008-11-26 03:26:14')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.2ms)[0m   [0mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('Osaka-Kobe-Kyoto', '2008-11-26 03:26:14', NULL, NULL, NULL, 0, NULL, NULL, 17375000, NULL, '2008-11-26 03:26:14')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.2ms)[0m   [0;1mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('Shanghai', '2008-11-26 03:26:14', NULL, NULL, NULL, 0, NULL, NULL, 16650000, NULL, '2008-11-26 03:26:14')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.2ms)[0m   [0mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('Manila', '2008-11-26 03:26:14', NULL, NULL, NULL, 0, NULL, NULL, 16300000, NULL, '2008-11-26 03:26:14')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.2ms)[0m   [0;1mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('Hong Kong Shenzhen', '2008-11-26 03:26:14', NULL, NULL, NULL, 0, NULL, NULL, 15800000, NULL, '2008-11-26 03:26:14')[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.3ms)[0m   [0mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('Los Angeles', '2008-11-26 03:26:14', NULL, NULL, NULL, 0, NULL, NULL, 15250000, NULL, '2008-11-26 03:26:14')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.3ms)[0m   [0;1mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('Kolkata', '2008-11-26 03:26:14', NULL, NULL, NULL, 0, NULL, NULL, 15100000, NULL, '2008-11-26 03:26:14')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.2ms)[0m   [0mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('Moscow', '2008-11-26 03:26:14', NULL, NULL, NULL, 0, NULL, NULL, 15000000, NULL, '2008-11-26 03:26:14')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.2ms)[0m   [0;1mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('Cairo', '2008-11-26 03:26:14', NULL, NULL, NULL, 0, NULL, NULL, 14450000, NULL, '2008-11-26 03:26:14')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.2ms)[0m   [0mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('Buenos Aires', '2008-11-26 03:26:14', NULL, NULL, NULL, 0, NULL, NULL, 13170000, NULL, '2008-11-26 03:26:14')[0m
+  [4;36;1mSQL (7.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.3ms)[0m   [0;1mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('London', '2008-11-26 03:26:14', NULL, NULL, NULL, 0, NULL, NULL, 12875000, NULL, '2008-11-26 03:26:14')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.2ms)[0m   [0mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('Beijing', '2008-11-26 03:26:14', NULL, NULL, NULL, 0, NULL, NULL, 12500000, NULL, '2008-11-26 03:26:14')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.2ms)[0m   [0;1mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('Karachi', '2008-11-26 03:26:14', NULL, NULL, NULL, 0, NULL, NULL, 11800000, NULL, '2008-11-26 03:26:14')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mCity Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `cities`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.3ms)[0m   [0mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('Tokyo', '2008-11-26 03:26:19', NULL, NULL, NULL, 0, NULL, NULL, 32450000, NULL, '2008-11-26 03:26:19')[0m
+  [4;36;1mSQL (9.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.2ms)[0m   [0;1mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('Seoul', '2008-11-26 03:26:19', NULL, NULL, NULL, 0, NULL, NULL, 20550000, NULL, '2008-11-26 03:26:19')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.2ms)[0m   [0mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('Mexico City', '2008-11-26 03:26:19', NULL, NULL, NULL, 0, NULL, NULL, 20450000, NULL, '2008-11-26 03:26:19')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.2ms)[0m   [0;1mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('New York City', '2008-11-26 03:26:19', NULL, NULL, NULL, 0, NULL, NULL, 19750000, NULL, '2008-11-26 03:26:19')[0m
+  [4;35;1mSQL (26.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.2ms)[0m   [0mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('Mumbai', '2008-11-26 03:26:19', NULL, NULL, NULL, 0, NULL, NULL, 19200000, NULL, '2008-11-26 03:26:19')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.2ms)[0m   [0;1mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('Jakarta', '2008-11-26 03:26:19', NULL, NULL, NULL, 0, NULL, NULL, 18900000, NULL, '2008-11-26 03:26:19')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.2ms)[0m   [0mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('Sao Paulo', '2008-11-26 03:26:19', NULL, NULL, NULL, 0, NULL, NULL, 18850000, NULL, '2008-11-26 03:26:19')[0m
+  [4;36;1mSQL (6.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.2ms)[0m   [0;1mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('Delhi', '2008-11-26 03:26:19', NULL, NULL, NULL, 0, NULL, NULL, 18600000, NULL, '2008-11-26 03:26:19')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.2ms)[0m   [0mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('Osaka-Kobe-Kyoto', '2008-11-26 03:26:19', NULL, NULL, NULL, 0, NULL, NULL, 17375000, NULL, '2008-11-26 03:26:19')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.2ms)[0m   [0;1mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('Shanghai', '2008-11-26 03:26:19', NULL, NULL, NULL, 0, NULL, NULL, 16650000, NULL, '2008-11-26 03:26:19')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.2ms)[0m   [0mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('Manila', '2008-11-26 03:26:19', NULL, NULL, NULL, 0, NULL, NULL, 16300000, NULL, '2008-11-26 03:26:19')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.2ms)[0m   [0;1mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('Hong Kong Shenzhen', '2008-11-26 03:26:19', NULL, NULL, NULL, 0, NULL, NULL, 15800000, NULL, '2008-11-26 03:26:19')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.2ms)[0m   [0mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('Los Angeles', '2008-11-26 03:26:19', NULL, NULL, NULL, 0, NULL, NULL, 15250000, NULL, '2008-11-26 03:26:19')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.2ms)[0m   [0;1mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('Kolkata', '2008-11-26 03:26:19', NULL, NULL, NULL, 0, NULL, NULL, 15100000, NULL, '2008-11-26 03:26:19')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.2ms)[0m   [0mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('Moscow', '2008-11-26 03:26:19', NULL, NULL, NULL, 0, NULL, NULL, 15000000, NULL, '2008-11-26 03:26:19')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.2ms)[0m   [0;1mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('Cairo', '2008-11-26 03:26:19', NULL, NULL, NULL, 0, NULL, NULL, 14450000, NULL, '2008-11-26 03:26:19')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.2ms)[0m   [0mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('Buenos Aires', '2008-11-26 03:26:19', NULL, NULL, NULL, 0, NULL, NULL, 13170000, NULL, '2008-11-26 03:26:19')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.2ms)[0m   [0;1mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('London', '2008-11-26 03:26:19', NULL, NULL, NULL, 0, NULL, NULL, 12875000, NULL, '2008-11-26 03:26:19')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.2ms)[0m   [0mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('Beijing', '2008-11-26 03:26:19', NULL, NULL, NULL, 0, NULL, NULL, 12500000, NULL, '2008-11-26 03:26:19')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.7ms)[0m   [0;1mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `longitude`, `created_at`) VALUES('Karachi', '2008-11-26 03:26:19', NULL, NULL, NULL, 0, NULL, NULL, 11800000, NULL, '2008-11-26 03:26:19')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (51.8ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (11.5ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20080101010101)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime, `creator_id` int(11), `updater_id` int(11), `first_name` varchar(255), `middle_name` varchar(255), `last_name` varchar(255), `nickname` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (13.4ms)[0m   [0;1mCREATE INDEX `index_users_on_first_name` ON `users` (`first_name`)[0m
+  [4;35;1mSQL (6.2ms)[0m   [0mCREATE INDEX `index_users_on_middle_name` ON `users` (`middle_name`)[0m
+  [4;36;1mSQL (35.5ms)[0m   [0;1mCREATE INDEX `index_users_on_last_name` ON `users` (`last_name`)[0m
+  [4;35;1mSQL (7.3ms)[0m   [0mCREATE INDEX `index_users_on_nickname` ON `users` (`nickname`)[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080101010101')[0m
+Migrating to CreateRoles (20080101010102)
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (3.1ms)[0m   [0;1mCREATE TABLE `roles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime, `creator_id` int(11), `updater_id` int(11), `name` varchar(255)) ENGINE=InnoDB[0m
+  [4;35;1mSQL (6.6ms)[0m   [0mCREATE INDEX `index_roles_on_name` ON `roles` (`name`)[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080101010102')[0m
+Migrating to CreateUsersRoles (20080101010103)
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (3.2ms)[0m   [0;1mCREATE TABLE `users_roles` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime, `creator_id` int(11), `updater_id` int(11), `user_id` varchar(255), `role_id` varchar(255)) ENGINE=InnoDB[0m
+  [4;35;1mSQL (22.9ms)[0m   [0mCREATE INDEX `index_users_roles_on_user_id` ON `users_roles` (`user_id`)[0m
+  [4;36;1mSQL (15.1ms)[0m   [0;1mCREATE INDEX `index_users_roles_on_role_id` ON `users_roles` (`role_id`)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20080101010103')[0m
+Migrating to CreateCountries (20080101010104)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (3.3ms)[0m   [0mCREATE TABLE `countries` (`id` varchar(2) NOT NULL, `created_at` datetime, `updated_at` datetime, `creator_id` int(11), `updater_id` int(11), `name` varchar(255) NOT NULL, `latitude` float, `longitude` float, `population` int(11), `area` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (15.5ms)[0m   [0;1mALTER TABLE countries ADD PRIMARY KEY (id)[0m
+  [4;35;1mSQL (34.8ms)[0m   [0mCREATE INDEX `index_countries_on_name` ON `countries` (`name`)[0m
+  [4;36;1mSQL (7.9ms)[0m   [0;1mCREATE INDEX `index_countries_on_latitude` ON `countries` (`latitude`)[0m
+  [4;35;1mSQL (25.6ms)[0m   [0mCREATE INDEX `index_countries_on_longitude` ON `countries` (`longitude`)[0m
+  [4;36;1mSQL (41.7ms)[0m   [0;1mCREATE INDEX `index_countries_on_population` ON `countries` (`population`)[0m
+  [4;35;1mSQL (7.1ms)[0m   [0mCREATE INDEX `index_countries_on_area` ON `countries` (`area`)[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080101010104')[0m
+Migrating to CreateProvinces (20080101010105)
+  [4;35;1mSQL (15.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (11.5ms)[0m   [0;1mCREATE TABLE `provinces` (`id` varchar(6) NOT NULL, `country_id` varchar(2) NOT NULL, `code` varchar(3), `created_at` datetime, `updated_at` datetime, `creator_id` int(11), `updater_id` int(11), `name` varchar(255) NOT NULL, `latitude` float, `longitude` float, `population` int(11), `area` int(11)) ENGINE=InnoDB[0m
+  [4;35;1mSQL (9.6ms)[0m   [0mALTER TABLE provinces ADD PRIMARY KEY (id)[0m
+  [4;36;1mSQL (6.3ms)[0m   [0;1mCREATE INDEX `index_provinces_on_country_id` ON `provinces` (`country_id`)[0m
+  [4;35;1mSQL (37.7ms)[0m   [0mCREATE INDEX `index_provinces_on_code` ON `provinces` (`code`)[0m
+  [4;36;1mSQL (6.5ms)[0m   [0;1mCREATE INDEX `index_provinces_on_name` ON `provinces` (`name`)[0m
+  [4;35;1mSQL (19.1ms)[0m   [0mCREATE INDEX `index_provinces_on_latitude` ON `provinces` (`latitude`)[0m
+  [4;36;1mSQL (17.8ms)[0m   [0;1mCREATE INDEX `index_provinces_on_longitude` ON `provinces` (`longitude`)[0m
+  [4;35;1mSQL (21.7ms)[0m   [0mCREATE INDEX `index_provinces_on_population` ON `provinces` (`population`)[0m
+  [4;36;1mSQL (44.9ms)[0m   [0;1mCREATE INDEX `index_provinces_on_area` ON `provinces` (`area`)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20080101010105')[0m
+Migrating to CreateCities (20080101010106)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mMysql::Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'area) ENGINE=InnoDB' at line 1: CREATE TABLE `cities` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime, `creator_id` int(11), `updater_id` int(11), `name` varchar(255) NOT NULL, `latitude` float, `longitude` float, `province_id` varchar(6), `country_id` varchar(2) NOT NULL, `airport_code` varchar(3), `population` int(11), `area` area) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20080101010101)
+Migrating to CreateRoles (20080101010102)
+Migrating to CreateUsersRoles (20080101010103)
+Migrating to CreateCountries (20080101010104)
+Migrating to CreateProvinces (20080101010105)
+Migrating to CreateCities (20080101010106)
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (54.8ms)[0m   [0;1mCREATE TABLE `cities` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime, `creator_id` int(11), `updater_id` int(11), `name` varchar(255) NOT NULL, `latitude` float, `longitude` float, `province_id` varchar(6), `country_id` varchar(2) NOT NULL, `airport_code` varchar(3), `population` int(11), `area` int(11)) ENGINE=InnoDB[0m
+  [4;35;1mSQL (7.2ms)[0m   [0mCREATE INDEX `index_cities_on_name` ON `cities` (`name`)[0m
+  [4;36;1mSQL (8.2ms)[0m   [0;1mCREATE INDEX `index_cities_on_latitude` ON `cities` (`latitude`)[0m
+  [4;35;1mSQL (12.7ms)[0m   [0mCREATE INDEX `index_cities_on_longitude` ON `cities` (`longitude`)[0m
+  [4;36;1mSQL (12.8ms)[0m   [0;1mCREATE INDEX `index_cities_on_province_id` ON `cities` (`province_id`)[0m
+  [4;35;1mSQL (11.1ms)[0m   [0mCREATE INDEX `index_cities_on_country_id` ON `cities` (`country_id`)[0m
+  [4;36;1mSQL (51.4ms)[0m   [0;1mCREATE INDEX `index_cities_on_airport_code` ON `cities` (`airport_code`)[0m
+  [4;35;1mSQL (11.0ms)[0m   [0mCREATE INDEX `index_cities_on_population` ON `cities` (`population`)[0m
+  [4;36;1mSQL (8.3ms)[0m   [0;1mCREATE INDEX `index_cities_on_area` ON `cities` (`area`)[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20080101010106')[0m
+Migrating to CreateNeighborhoods (20080101010107)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (4.3ms)[0m   [0mCREATE TABLE `neighborhoods` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime, `creator_id` int(11), `updater_id` int(11), `name` varchar(255), `latitude` float, `longitude` float, `population` int(11), `city_id` int(11)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (25.4ms)[0m   [0;1mCREATE INDEX `index_neighborhoods_on_name` ON `neighborhoods` (`name`)[0m
+  [4;35;1mSQL (5.9ms)[0m   [0mCREATE INDEX `index_neighborhoods_on_latitude` ON `neighborhoods` (`latitude`)[0m
+  [4;36;1mSQL (29.6ms)[0m   [0;1mCREATE INDEX `index_neighborhoods_on_longitude` ON `neighborhoods` (`longitude`)[0m
+  [4;35;1mSQL (28.2ms)[0m   [0mCREATE INDEX `index_neighborhoods_on_population` ON `neighborhoods` (`population`)[0m
+  [4;36;1mSQL (10.2ms)[0m   [0;1mCREATE INDEX `index_neighborhoods_on_city_id` ON `neighborhoods` (`city_id`)[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20080101010107')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW FIELDS FROM `cities`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mdescribe `cities`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW KEYS FROM `cities`[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSHOW FIELDS FROM `countries`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mdescribe `countries`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW KEYS FROM `countries`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW FIELDS FROM `neighborhoods`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mdescribe `neighborhoods`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `neighborhoods`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `provinces`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mdescribe `provinces`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW KEYS FROM `provinces`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mdescribe `roles`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `roles`[0m
+  [4;36;1mSQL (38.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mSHOW FIELDS FROM `users_roles`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mdescribe `users_roles`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `users_roles`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mCountry Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `countries`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.3ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Andorra, Principality of', '2008-11-26 03:29:11', NULL, NULL, 'AD', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (8.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('United Arab Emirates', '2008-11-26 03:29:11', NULL, NULL, 'AE', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Afghanistan, Islamic State of', '2008-11-26 03:29:11', NULL, NULL, 'AF', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Antigua and Barbuda', '2008-11-26 03:29:11', NULL, NULL, 'AG', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (28.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Anguilla', '2008-11-26 03:29:11', NULL, NULL, 'AI', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Albania', '2008-11-26 03:29:11', NULL, NULL, 'AL', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Armenia', '2008-11-26 03:29:11', NULL, NULL, 'AM', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (5.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Netherlands Antilles', '2008-11-26 03:29:11', NULL, NULL, 'AN', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Angola', '2008-11-26 03:29:11', NULL, NULL, 'AO', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Antarctica', '2008-11-26 03:29:11', NULL, NULL, 'AQ', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Argentina', '2008-11-26 03:29:11', NULL, NULL, 'AR', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('American Samoa', '2008-11-26 03:29:11', NULL, NULL, 'AS', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Austria', '2008-11-26 03:29:11', NULL, NULL, 'AT', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Australia', '2008-11-26 03:29:11', NULL, NULL, 'AU', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Aruba', '2008-11-26 03:29:11', NULL, NULL, 'AW', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Azerbaidjan', '2008-11-26 03:29:11', NULL, NULL, 'AZ', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (3.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Bosnia-Herzegovina', '2008-11-26 03:29:11', NULL, NULL, 'BA', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Barbados', '2008-11-26 03:29:11', NULL, NULL, 'BB', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.5ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Bangladesh', '2008-11-26 03:29:11', NULL, NULL, 'BD', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Belgium', '2008-11-26 03:29:11', NULL, NULL, 'BE', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Burkina Faso', '2008-11-26 03:29:11', NULL, NULL, 'BF', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Bulgaria', '2008-11-26 03:29:11', NULL, NULL, 'BG', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Bahrain', '2008-11-26 03:29:11', NULL, NULL, 'BH', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Burundi', '2008-11-26 03:29:11', NULL, NULL, 'BI', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Benin', '2008-11-26 03:29:11', NULL, NULL, 'BJ', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Bermuda', '2008-11-26 03:29:11', NULL, NULL, 'BM', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Brunei Darussalam', '2008-11-26 03:29:11', NULL, NULL, 'BN', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Bolivia', '2008-11-26 03:29:11', NULL, NULL, 'BO', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Brazil', '2008-11-26 03:29:11', NULL, NULL, 'BR', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Bahamas', '2008-11-26 03:29:11', NULL, NULL, 'BS', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Bhutan', '2008-11-26 03:29:11', NULL, NULL, 'BT', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Bouvet Island', '2008-11-26 03:29:11', NULL, NULL, 'BV', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Botswana', '2008-11-26 03:29:11', NULL, NULL, 'BW', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.3ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Belarus', '2008-11-26 03:29:11', NULL, NULL, 'BY', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Belize', '2008-11-26 03:29:11', NULL, NULL, 'BZ', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Canada', '2008-11-26 03:29:11', NULL, NULL, 'CA', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Cocos Keeling Islands', '2008-11-26 03:29:11', NULL, NULL, 'CC', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Central African Republic', '2008-11-26 03:29:11', NULL, NULL, 'CF', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.5ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Congo, The Democratic Republic of the', '2008-11-26 03:29:11', NULL, NULL, 'CD', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Congo', '2008-11-26 03:29:11', NULL, NULL, 'CG', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Switzerland', '2008-11-26 03:29:11', NULL, NULL, 'CH', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Ivory Coast Cote D\'Ivoire', '2008-11-26 03:29:11', NULL, NULL, 'CI', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Cook Islands', '2008-11-26 03:29:11', NULL, NULL, 'CK', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Chile', '2008-11-26 03:29:11', NULL, NULL, 'CL', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.1ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Cameroon', '2008-11-26 03:29:11', NULL, NULL, 'CM', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('China', '2008-11-26 03:29:11', NULL, NULL, 'CN', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.1ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Colombia', '2008-11-26 03:29:11', NULL, NULL, 'CO', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (13.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Costa Rica', '2008-11-26 03:29:11', NULL, NULL, 'CR', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Former Czechoslovakia', '2008-11-26 03:29:11', NULL, NULL, 'CS', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Cuba', '2008-11-26 03:29:11', NULL, NULL, 'CU', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (6.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Cape Verde', '2008-11-26 03:29:11', NULL, NULL, 'CV', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Christmas Island', '2008-11-26 03:29:11', NULL, NULL, 'CX', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Cyprus', '2008-11-26 03:29:11', NULL, NULL, 'CY', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (6.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Czech Republic', '2008-11-26 03:29:11', NULL, NULL, 'CZ', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Germany', '2008-11-26 03:29:11', NULL, NULL, 'DE', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Djibouti', '2008-11-26 03:29:11', NULL, NULL, 'DJ', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (6.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.1ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Denmark', '2008-11-26 03:29:11', NULL, NULL, 'DK', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Dominica', '2008-11-26 03:29:11', NULL, NULL, 'DM', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Dominican Republic', '2008-11-26 03:29:11', NULL, NULL, 'DO', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.8ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Algeria', '2008-11-26 03:29:11', NULL, NULL, 'DZ', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Ecuador', '2008-11-26 03:29:11', NULL, NULL, 'EC', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Estonia', '2008-11-26 03:29:11', NULL, NULL, 'EE', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Egypt', '2008-11-26 03:29:11', NULL, NULL, 'EG', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Western Sahara', '2008-11-26 03:29:11', NULL, NULL, 'EH', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (6.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.3ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Eritrea', '2008-11-26 03:29:11', NULL, NULL, 'ER', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Spain', '2008-11-26 03:29:11', NULL, NULL, 'ES', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Ethiopia', '2008-11-26 03:29:11', NULL, NULL, 'ET', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (4.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Finland', '2008-11-26 03:29:11', NULL, NULL, 'FI', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Fiji', '2008-11-26 03:29:11', NULL, NULL, 'FJ', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Falkland Islands', '2008-11-26 03:29:11', NULL, NULL, 'FK', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (5.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Micronesia', '2008-11-26 03:29:11', NULL, NULL, 'FM', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Faroe Islands', '2008-11-26 03:29:11', NULL, NULL, 'FO', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('France', '2008-11-26 03:29:11', NULL, NULL, 'FR', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('France European Territory', '2008-11-26 03:29:11', NULL, NULL, 'FX', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Gabon', '2008-11-26 03:29:11', NULL, NULL, 'GA', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Great Britain', '2008-11-26 03:29:11', NULL, NULL, 'GB', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Grenada', '2008-11-26 03:29:11', NULL, NULL, 'GD', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Georgia', '2008-11-26 03:29:11', NULL, NULL, 'GE', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('French Guyana', '2008-11-26 03:29:11', NULL, NULL, 'GF', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Ghana', '2008-11-26 03:29:11', NULL, NULL, 'GH', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Gibraltar', '2008-11-26 03:29:11', NULL, NULL, 'GI', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Greenland', '2008-11-26 03:29:11', NULL, NULL, 'GL', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (1.0ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Gambia', '2008-11-26 03:29:11', NULL, NULL, 'GM', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Guinea', '2008-11-26 03:29:11', NULL, NULL, 'GN', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Guadeloupe French', '2008-11-26 03:29:11', NULL, NULL, 'GP', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Equatorial Guinea', '2008-11-26 03:29:11', NULL, NULL, 'GQ', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Greece', '2008-11-26 03:29:11', NULL, NULL, 'GR', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('S. Georgia & S. Sandwich Isls.', '2008-11-26 03:29:11', NULL, NULL, 'GS', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Guatemala', '2008-11-26 03:29:11', NULL, NULL, 'GT', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Guam USA', '2008-11-26 03:29:11', NULL, NULL, 'GU', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Guinea Bissau', '2008-11-26 03:29:11', NULL, NULL, 'GW', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (7.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Guyana', '2008-11-26 03:29:11', NULL, NULL, 'GY', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Hong Kong', '2008-11-26 03:29:11', NULL, NULL, 'HK', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Heard and McDonald Islands', '2008-11-26 03:29:11', NULL, NULL, 'HM', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (5.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Honduras', '2008-11-26 03:29:11', NULL, NULL, 'HN', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Croatia', '2008-11-26 03:29:11', NULL, NULL, 'HR', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Haiti', '2008-11-26 03:29:11', NULL, NULL, 'HT', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (4.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Hungary', '2008-11-26 03:29:11', NULL, NULL, 'HU', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Indonesia', '2008-11-26 03:29:11', NULL, NULL, 'ID', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Ireland', '2008-11-26 03:29:11', NULL, NULL, 'IE', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (5.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Israel', '2008-11-26 03:29:11', NULL, NULL, 'IL', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('India', '2008-11-26 03:29:11', NULL, NULL, 'IN', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('British Indian Ocean Territory', '2008-11-26 03:29:11', NULL, NULL, 'IO', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (4.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Iraq', '2008-11-26 03:29:11', NULL, NULL, 'IQ', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Iran', '2008-11-26 03:29:11', NULL, NULL, 'IR', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Iceland', '2008-11-26 03:29:11', NULL, NULL, 'IS', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (1.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Italy', '2008-11-26 03:29:11', NULL, NULL, 'IT', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Jamaica', '2008-11-26 03:29:11', NULL, NULL, 'JM', NULL, NULL, NULL, NULL, '2008-11-26 03:29:11')[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.4ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Jordan', '2008-11-26 03:29:12', NULL, NULL, 'JO', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Japan', '2008-11-26 03:29:12', NULL, NULL, 'JP', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Kenya', '2008-11-26 03:29:12', NULL, NULL, 'KE', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Kyrgyz Republic Kyrgyzstan', '2008-11-26 03:29:12', NULL, NULL, 'KG', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Cambodia, Kingdom of', '2008-11-26 03:29:12', NULL, NULL, 'KH', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Kiribati', '2008-11-26 03:29:12', NULL, NULL, 'KI', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Comoros', '2008-11-26 03:29:12', NULL, NULL, 'KM', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Saint Kitts & Nevis Anguilla', '2008-11-26 03:29:12', NULL, NULL, 'KN', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('North Korea', '2008-11-26 03:29:12', NULL, NULL, 'KP', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('South Korea', '2008-11-26 03:29:12', NULL, NULL, 'KR', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Kuwait', '2008-11-26 03:29:12', NULL, NULL, 'KW', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Cayman Islands', '2008-11-26 03:29:12', NULL, NULL, 'KY', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Kazakhstan', '2008-11-26 03:29:12', NULL, NULL, 'KZ', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Laos', '2008-11-26 03:29:12', NULL, NULL, 'LA', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (18.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Lebanon', '2008-11-26 03:29:12', NULL, NULL, 'LB', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Saint Lucia', '2008-11-26 03:29:12', NULL, NULL, 'LC', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (6.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Liechtenstein', '2008-11-26 03:29:12', NULL, NULL, 'LI', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Sri Lanka', '2008-11-26 03:29:12', NULL, NULL, 'LK', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Liberia', '2008-11-26 03:29:12', NULL, NULL, 'LR', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Lesotho', '2008-11-26 03:29:12', NULL, NULL, 'LS', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Lithuania', '2008-11-26 03:29:12', NULL, NULL, 'LT', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Luxembourg', '2008-11-26 03:29:12', NULL, NULL, 'LU', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (9.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Latvia', '2008-11-26 03:29:12', NULL, NULL, 'LV', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Libya', '2008-11-26 03:29:12', NULL, NULL, 'LY', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (1.4ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Morocco', '2008-11-26 03:29:12', NULL, NULL, 'MA', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Monaco', '2008-11-26 03:29:12', NULL, NULL, 'MC', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Moldavia', '2008-11-26 03:29:12', NULL, NULL, 'MD', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.3ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Madagascar', '2008-11-26 03:29:12', NULL, NULL, 'MG', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (7.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Marshall Islands', '2008-11-26 03:29:12', NULL, NULL, 'MH', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Macedonia', '2008-11-26 03:29:12', NULL, NULL, 'MK', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (7.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.3ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Mali', '2008-11-26 03:29:12', NULL, NULL, 'ML', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Myanmar', '2008-11-26 03:29:12', NULL, NULL, 'MM', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Mongolia', '2008-11-26 03:29:12', NULL, NULL, 'MN', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Macau', '2008-11-26 03:29:12', NULL, NULL, 'MO', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Northern Mariana Islands', '2008-11-26 03:29:12', NULL, NULL, 'MP', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (11.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Martinique French', '2008-11-26 03:29:12', NULL, NULL, 'MQ', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Mauritania', '2008-11-26 03:29:12', NULL, NULL, 'MR', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Montserrat', '2008-11-26 03:29:12', NULL, NULL, 'MS', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (5.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Malta', '2008-11-26 03:29:12', NULL, NULL, 'MT', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Mauritius', '2008-11-26 03:29:12', NULL, NULL, 'MU', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Maldives', '2008-11-26 03:29:12', NULL, NULL, 'MV', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (4.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.3ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Malawi', '2008-11-26 03:29:12', NULL, NULL, 'MW', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Mexico', '2008-11-26 03:29:12', NULL, NULL, 'MX', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Malaysia', '2008-11-26 03:29:12', NULL, NULL, 'MY', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Mozambique', '2008-11-26 03:29:12', NULL, NULL, 'MZ', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Namibia', '2008-11-26 03:29:12', NULL, NULL, 'NA', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('New Caledonia French', '2008-11-26 03:29:12', NULL, NULL, 'NC', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Niger', '2008-11-26 03:29:12', NULL, NULL, 'NE', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Norfolk Island', '2008-11-26 03:29:12', NULL, NULL, 'NF', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (5.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Nigeria', '2008-11-26 03:29:12', NULL, NULL, 'NG', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Nicaragua', '2008-11-26 03:29:12', NULL, NULL, 'NI', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Netherlands', '2008-11-26 03:29:12', NULL, NULL, 'NL', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (5.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (1.6ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Norway', '2008-11-26 03:29:12', NULL, NULL, 'NO', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Nepal', '2008-11-26 03:29:12', NULL, NULL, 'NP', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Nauru', '2008-11-26 03:29:12', NULL, NULL, 'NR', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (3.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Neutral Zone', '2008-11-26 03:29:12', NULL, NULL, 'NT', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Niue', '2008-11-26 03:29:12', NULL, NULL, 'NU', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('New Zealand', '2008-11-26 03:29:12', NULL, NULL, 'NZ', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Oman', '2008-11-26 03:29:12', NULL, NULL, 'OM', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Panama', '2008-11-26 03:29:12', NULL, NULL, 'PA', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Peru', '2008-11-26 03:29:12', NULL, NULL, 'PE', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Polynesia French', '2008-11-26 03:29:12', NULL, NULL, 'PF', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.3ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Papua New Guinea', '2008-11-26 03:29:12', NULL, NULL, 'PG', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (5.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Philippines', '2008-11-26 03:29:12', NULL, NULL, 'PH', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Pakistan', '2008-11-26 03:29:12', NULL, NULL, 'PK', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Poland', '2008-11-26 03:29:12', NULL, NULL, 'PL', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (5.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Saint Pierre and Miquelon', '2008-11-26 03:29:12', NULL, NULL, 'PM', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Pitcairn Island', '2008-11-26 03:29:12', NULL, NULL, 'PN', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Puerto Rico', '2008-11-26 03:29:12', NULL, NULL, 'PR', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (5.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Portugal', '2008-11-26 03:29:12', NULL, NULL, 'PT', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Palau', '2008-11-26 03:29:12', NULL, NULL, 'PW', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Paraguay', '2008-11-26 03:29:12', NULL, NULL, 'PY', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (5.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Qatar', '2008-11-26 03:29:12', NULL, NULL, 'QA', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Reunion French', '2008-11-26 03:29:12', NULL, NULL, 'RE', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Romania', '2008-11-26 03:29:12', NULL, NULL, 'RO', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (5.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Russian Federation', '2008-11-26 03:29:12', NULL, NULL, 'RU', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Rwanda', '2008-11-26 03:29:12', NULL, NULL, 'RW', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Saudi Arabia', '2008-11-26 03:29:12', NULL, NULL, 'SA', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (5.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Solomon Islands', '2008-11-26 03:29:12', NULL, NULL, 'SB', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Seychelles', '2008-11-26 03:29:12', NULL, NULL, 'SC', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Sudan', '2008-11-26 03:29:12', NULL, NULL, 'SD', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (5.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (1.9ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Sweden', '2008-11-26 03:29:12', NULL, NULL, 'SE', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (8.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Singapore', '2008-11-26 03:29:12', NULL, NULL, 'SG', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Saint Helena', '2008-11-26 03:29:12', NULL, NULL, 'SH', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Slovenia', '2008-11-26 03:29:12', NULL, NULL, 'SI', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (4.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Svalbard and Jan Mayen Islands', '2008-11-26 03:29:12', NULL, NULL, 'SJ', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Slovak Republic', '2008-11-26 03:29:12', NULL, NULL, 'SK', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (7.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Sierra Leone', '2008-11-26 03:29:12', NULL, NULL, 'SL', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('San Marino', '2008-11-26 03:29:12', NULL, NULL, 'SM', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Senegal', '2008-11-26 03:29:12', NULL, NULL, 'SN', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (5.2ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Somalia', '2008-11-26 03:29:12', NULL, NULL, 'SO', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Suriname', '2008-11-26 03:29:12', NULL, NULL, 'SR', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Saint Tome Sao Tome and Principe', '2008-11-26 03:29:12', NULL, NULL, 'ST', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (5.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.3ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Former USSR', '2008-11-26 03:29:12', NULL, NULL, 'SU', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('El Salvador', '2008-11-26 03:29:12', NULL, NULL, 'SV', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (6.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Syria', '2008-11-26 03:29:12', NULL, NULL, 'SY', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Swaziland', '2008-11-26 03:29:12', NULL, NULL, 'SZ', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (6.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Turks and Caicos Islands', '2008-11-26 03:29:12', NULL, NULL, 'TC', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Chad', '2008-11-26 03:29:12', NULL, NULL, 'TD', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (6.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.3ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('French Southern Territories', '2008-11-26 03:29:12', NULL, NULL, 'TF', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Togo', '2008-11-26 03:29:12', NULL, NULL, 'TG', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (6.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.3ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Thailand', '2008-11-26 03:29:12', NULL, NULL, 'TH', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.3ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Tadjikistan', '2008-11-26 03:29:12', NULL, NULL, 'TJ', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (6.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.3ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Tokelau', '2008-11-26 03:29:12', NULL, NULL, 'TK', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Turkmenistan', '2008-11-26 03:29:12', NULL, NULL, 'TM', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (6.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.2ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Tunisia', '2008-11-26 03:29:12', NULL, NULL, 'TN', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.2ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Tonga', '2008-11-26 03:29:12', NULL, NULL, 'TO', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (6.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.3ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('East Timor', '2008-11-26 03:29:12', NULL, NULL, 'TP', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.3ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Turkey', '2008-11-26 03:29:12', NULL, NULL, 'TR', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (5.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.3ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Trinidad and Tobago', '2008-11-26 03:29:12', NULL, NULL, 'TT', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.3ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Tuvalu', '2008-11-26 03:29:12', NULL, NULL, 'TV', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (4.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.3ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Taiwan', '2008-11-26 03:29:12', NULL, NULL, 'TW', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (3.5ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Tanzania', '2008-11-26 03:29:12', NULL, NULL, 'TZ', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.3ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Ukraine', '2008-11-26 03:29:12', NULL, NULL, 'UA', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.3ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Uganda', '2008-11-26 03:29:12', NULL, NULL, 'UG', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (5.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.3ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('United Kingdom', '2008-11-26 03:29:12', NULL, NULL, 'UK', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.3ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('USA Minor Outlying Islands', '2008-11-26 03:29:12', NULL, NULL, 'UM', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (4.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.3ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('United States', '2008-11-26 03:29:12', NULL, NULL, 'US', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.3ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Uruguay', '2008-11-26 03:29:12', NULL, NULL, 'UY', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (5.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.3ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Uzbekistan', '2008-11-26 03:29:12', NULL, NULL, 'UZ', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.3ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Holy See Vatican City State', '2008-11-26 03:29:12', NULL, NULL, 'VA', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (4.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.3ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Saint Vincent & Grenadines', '2008-11-26 03:29:12', NULL, NULL, 'VC', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.3ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Venezuela', '2008-11-26 03:29:12', NULL, NULL, 'VE', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (5.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.3ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Virgin Islands British', '2008-11-26 03:29:12', NULL, NULL, 'VG', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.3ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Virgin Islands USA', '2008-11-26 03:29:12', NULL, NULL, 'VI', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (5.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.4ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Vietnam', '2008-11-26 03:29:12', NULL, NULL, 'VN', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.3ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Vanuatu', '2008-11-26 03:29:12', NULL, NULL, 'VU', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (4.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.3ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Wallis and Futuna Islands', '2008-11-26 03:29:12', NULL, NULL, 'WF', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.3ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Samoa', '2008-11-26 03:29:12', NULL, NULL, 'WS', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (4.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.3ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Yemen', '2008-11-26 03:29:12', NULL, NULL, 'YE', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.3ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Mayotte', '2008-11-26 03:29:12', NULL, NULL, 'YT', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (4.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.3ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Yugoslavia', '2008-11-26 03:29:12', NULL, NULL, 'YU', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.3ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('South Africa', '2008-11-26 03:29:12', NULL, NULL, 'ZA', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (4.8ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.3ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Zambia', '2008-11-26 03:29:12', NULL, NULL, 'ZM', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCountry Create (0.3ms)[0m   [0mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Zaire', '2008-11-26 03:29:12', NULL, NULL, 'ZR', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;36;1mSQL (5.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCountry Create (0.3ms)[0m   [0;1mINSERT INTO `countries` (`name`, `updated_at`, `latitude`, `creator_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Zimbabwe', '2008-11-26 03:29:12', NULL, NULL, 'ZW', NULL, NULL, NULL, NULL, '2008-11-26 03:29:12')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mProvince Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `provinces`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProvince Create (0.3ms)[0m   [0mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Alabama', '2008-11-26 03:29:17', NULL, 'AL', NULL, 'US', 'US-AL', NULL, NULL, NULL, NULL, '2008-11-26 03:29:17')[0m
+  [4;36;1mSQL (3.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mProvince Create (0.2ms)[0m   [0;1mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Alaska', '2008-11-26 03:29:17', NULL, 'AK', NULL, 'US', 'US-AK', NULL, NULL, NULL, NULL, '2008-11-26 03:29:17')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProvince Create (0.2ms)[0m   [0mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('American Samoa', '2008-11-26 03:29:17', NULL, 'AS', NULL, 'US', 'US-AS', NULL, NULL, NULL, NULL, '2008-11-26 03:29:17')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mProvince Create (0.2ms)[0m   [0;1mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Arizona', '2008-11-26 03:29:17', NULL, 'AZ', NULL, 'US', 'US-AZ', NULL, NULL, NULL, NULL, '2008-11-26 03:29:17')[0m
+  [4;35;1mSQL (14.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProvince Create (0.2ms)[0m   [0mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Arkansas', '2008-11-26 03:29:17', NULL, 'AR', NULL, 'US', 'US-AR', NULL, NULL, NULL, NULL, '2008-11-26 03:29:17')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mProvince Create (0.2ms)[0m   [0;1mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('California', '2008-11-26 03:29:17', NULL, 'CA', NULL, 'US', 'US-CA', NULL, NULL, NULL, NULL, '2008-11-26 03:29:17')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProvince Create (0.2ms)[0m   [0mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Colorado', '2008-11-26 03:29:17', NULL, 'CO', NULL, 'US', 'US-CO', NULL, NULL, NULL, NULL, '2008-11-26 03:29:17')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mProvince Create (0.2ms)[0m   [0;1mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Connecticut', '2008-11-26 03:29:17', NULL, 'CT', NULL, 'US', 'US-CT', NULL, NULL, NULL, NULL, '2008-11-26 03:29:17')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProvince Create (0.3ms)[0m   [0mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Delaware', '2008-11-26 03:29:17', NULL, 'DE', NULL, 'US', 'US-DE', NULL, NULL, NULL, NULL, '2008-11-26 03:29:17')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mProvince Create (0.2ms)[0m   [0;1mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('District of Columbia', '2008-11-26 03:29:17', NULL, 'DC', NULL, 'US', 'US-DC', NULL, NULL, NULL, NULL, '2008-11-26 03:29:17')[0m
+  [4;35;1mSQL (19.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProvince Create (0.2ms)[0m   [0mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Florida', '2008-11-26 03:29:17', NULL, 'FL', NULL, 'US', 'US-FL', NULL, NULL, NULL, NULL, '2008-11-26 03:29:17')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mProvince Create (0.2ms)[0m   [0;1mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Georgia', '2008-11-26 03:29:17', NULL, 'GA', NULL, 'US', 'US-GA', NULL, NULL, NULL, NULL, '2008-11-26 03:29:17')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProvince Create (0.2ms)[0m   [0mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Guam', '2008-11-26 03:29:17', NULL, 'GU', NULL, 'US', 'US-GU', NULL, NULL, NULL, NULL, '2008-11-26 03:29:17')[0m
+  [4;36;1mSQL (6.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mProvince Create (0.2ms)[0m   [0;1mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Hawaii', '2008-11-26 03:29:17', NULL, 'HI', NULL, 'US', 'US-HI', NULL, NULL, NULL, NULL, '2008-11-26 03:29:17')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProvince Create (0.2ms)[0m   [0mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Idaho', '2008-11-26 03:29:17', NULL, 'ID', NULL, 'US', 'US-ID', NULL, NULL, NULL, NULL, '2008-11-26 03:29:17')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mProvince Create (0.2ms)[0m   [0;1mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Illinois', '2008-11-26 03:29:17', NULL, 'IL', NULL, 'US', 'US-IL', NULL, NULL, NULL, NULL, '2008-11-26 03:29:17')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProvince Create (0.2ms)[0m   [0mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Indiana', '2008-11-26 03:29:17', NULL, 'IN', NULL, 'US', 'US-IN', NULL, NULL, NULL, NULL, '2008-11-26 03:29:17')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mProvince Create (0.2ms)[0m   [0;1mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Iowa', '2008-11-26 03:29:17', NULL, 'IA', NULL, 'US', 'US-IA', NULL, NULL, NULL, NULL, '2008-11-26 03:29:17')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProvince Create (0.5ms)[0m   [0mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Kansas', '2008-11-26 03:29:17', NULL, 'KS', NULL, 'US', 'US-KS', NULL, NULL, NULL, NULL, '2008-11-26 03:29:17')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mProvince Create (0.2ms)[0m   [0;1mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Kentucky', '2008-11-26 03:29:17', NULL, 'KY', NULL, 'US', 'US-KY', NULL, NULL, NULL, NULL, '2008-11-26 03:29:17')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProvince Create (0.2ms)[0m   [0mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Louisiana', '2008-11-26 03:29:17', NULL, 'LA', NULL, 'US', 'US-LA', NULL, NULL, NULL, NULL, '2008-11-26 03:29:17')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mProvince Create (0.2ms)[0m   [0;1mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Maine', '2008-11-26 03:29:17', NULL, 'ME', NULL, 'US', 'US-ME', NULL, NULL, NULL, NULL, '2008-11-26 03:29:17')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProvince Create (0.2ms)[0m   [0mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Maryland', '2008-11-26 03:29:17', NULL, 'MD', NULL, 'US', 'US-MD', NULL, NULL, NULL, NULL, '2008-11-26 03:29:17')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mProvince Create (0.2ms)[0m   [0;1mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Massachusetts', '2008-11-26 03:29:17', NULL, 'MA', NULL, 'US', 'US-MA', NULL, NULL, NULL, NULL, '2008-11-26 03:29:17')[0m
+  [4;35;1mSQL (11.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProvince Create (0.2ms)[0m   [0mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Michigan', '2008-11-26 03:29:17', NULL, 'MI', NULL, 'US', 'US-MI', NULL, NULL, NULL, NULL, '2008-11-26 03:29:17')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mProvince Create (0.3ms)[0m   [0;1mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Minnesota', '2008-11-26 03:29:17', NULL, 'MN', NULL, 'US', 'US-MN', NULL, NULL, NULL, NULL, '2008-11-26 03:29:17')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProvince Create (0.2ms)[0m   [0mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Mariana Islands', '2008-11-26 03:29:17', NULL, 'MP', NULL, 'US', 'US-MP', NULL, NULL, NULL, NULL, '2008-11-26 03:29:17')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mProvince Create (0.2ms)[0m   [0;1mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Mississippi', '2008-11-26 03:29:17', NULL, 'MS', NULL, 'US', 'US-MS', NULL, NULL, NULL, NULL, '2008-11-26 03:29:17')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProvince Create (0.3ms)[0m   [0mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Missouri', '2008-11-26 03:29:17', NULL, 'MO', NULL, 'US', 'US-MO', NULL, NULL, NULL, NULL, '2008-11-26 03:29:17')[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mProvince Create (0.3ms)[0m   [0;1mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Montana', '2008-11-26 03:29:17', NULL, 'MT', NULL, 'US', 'US-MT', NULL, NULL, NULL, NULL, '2008-11-26 03:29:17')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProvince Create (0.3ms)[0m   [0mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('North Carolina', '2008-11-26 03:29:17', NULL, 'NC', NULL, 'US', 'US-NC', NULL, NULL, NULL, NULL, '2008-11-26 03:29:17')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mProvince Create (0.3ms)[0m   [0;1mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('North Dakota', '2008-11-26 03:29:17', NULL, 'ND', NULL, 'US', 'US-ND', NULL, NULL, NULL, NULL, '2008-11-26 03:29:17')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProvince Create (0.3ms)[0m   [0mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Nebraska', '2008-11-26 03:29:17', NULL, 'NE', NULL, 'US', 'US-NE', NULL, NULL, NULL, NULL, '2008-11-26 03:29:17')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mProvince Create (0.3ms)[0m   [0;1mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Nevada', '2008-11-26 03:29:17', NULL, 'NV', NULL, 'US', 'US-NV', NULL, NULL, NULL, NULL, '2008-11-26 03:29:17')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProvince Create (0.3ms)[0m   [0mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('New Hampshire', '2008-11-26 03:29:17', NULL, 'NH', NULL, 'US', 'US-NH', NULL, NULL, NULL, NULL, '2008-11-26 03:29:17')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mProvince Create (0.3ms)[0m   [0;1mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('New Jersey', '2008-11-26 03:29:17', NULL, 'NJ', NULL, 'US', 'US-NJ', NULL, NULL, NULL, NULL, '2008-11-26 03:29:17')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProvince Create (0.3ms)[0m   [0mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('New Mexico', '2008-11-26 03:29:17', NULL, 'NM', NULL, 'US', 'US-NM', NULL, NULL, NULL, NULL, '2008-11-26 03:29:17')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mProvince Create (0.3ms)[0m   [0;1mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('New York', '2008-11-26 03:29:17', NULL, 'NY', NULL, 'US', 'US-NY', NULL, NULL, NULL, NULL, '2008-11-26 03:29:17')[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProvince Create (1.0ms)[0m   [0mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Ohio', '2008-11-26 03:29:17', NULL, 'OH', NULL, 'US', 'US-OH', NULL, NULL, NULL, NULL, '2008-11-26 03:29:17')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mProvince Create (0.3ms)[0m   [0;1mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Oklahoma', '2008-11-26 03:29:17', NULL, 'OK', NULL, 'US', 'US-OK', NULL, NULL, NULL, NULL, '2008-11-26 03:29:17')[0m
+  [4;35;1mSQL (11.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProvince Create (0.3ms)[0m   [0mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Oregon', '2008-11-26 03:29:17', NULL, 'OR', NULL, 'US', 'US-OR', NULL, NULL, NULL, NULL, '2008-11-26 03:29:17')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mProvince Create (0.3ms)[0m   [0;1mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Pennsylvania', '2008-11-26 03:29:17', NULL, 'PA', NULL, 'US', 'US-PA', NULL, NULL, NULL, NULL, '2008-11-26 03:29:17')[0m
+  [4;35;1mSQL (5.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProvince Create (0.3ms)[0m   [0mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Puerto Rico', '2008-11-26 03:29:17', NULL, 'PR', NULL, 'US', 'US-PR', NULL, NULL, NULL, NULL, '2008-11-26 03:29:17')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mProvince Create (0.3ms)[0m   [0;1mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Rhode Island', '2008-11-26 03:29:17', NULL, 'RI', NULL, 'US', 'US-RI', NULL, NULL, NULL, NULL, '2008-11-26 03:29:17')[0m
+  [4;35;1mSQL (6.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProvince Create (0.3ms)[0m   [0mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('South Carolina', '2008-11-26 03:29:17', NULL, 'SC', NULL, 'US', 'US-SC', NULL, NULL, NULL, NULL, '2008-11-26 03:29:17')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mProvince Create (0.7ms)[0m   [0;1mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('South Dakota', '2008-11-26 03:29:17', NULL, 'SD', NULL, 'US', 'US-SD', NULL, NULL, NULL, NULL, '2008-11-26 03:29:17')[0m
+  [4;35;1mSQL (4.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProvince Create (0.4ms)[0m   [0mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Tennessee', '2008-11-26 03:29:17', NULL, 'TN', NULL, 'US', 'US-TN', NULL, NULL, NULL, NULL, '2008-11-26 03:29:17')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mProvince Create (0.3ms)[0m   [0;1mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Texas', '2008-11-26 03:29:17', NULL, 'TX', NULL, 'US', 'US-TX', NULL, NULL, NULL, NULL, '2008-11-26 03:29:17')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProvince Create (0.4ms)[0m   [0mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Utah', '2008-11-26 03:29:17', NULL, 'UT', NULL, 'US', 'US-UT', NULL, NULL, NULL, NULL, '2008-11-26 03:29:17')[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mProvince Create (0.3ms)[0m   [0;1mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Vermont', '2008-11-26 03:29:18', NULL, 'VT', NULL, 'US', 'US-VT', NULL, NULL, NULL, NULL, '2008-11-26 03:29:18')[0m
+  [4;35;1mSQL (7.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProvince Create (0.4ms)[0m   [0mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Virginia', '2008-11-26 03:29:18', NULL, 'VA', NULL, 'US', 'US-VA', NULL, NULL, NULL, NULL, '2008-11-26 03:29:18')[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mProvince Create (0.4ms)[0m   [0;1mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Virgin Islands', '2008-11-26 03:29:18', NULL, 'VI', NULL, 'US', 'US-VI', NULL, NULL, NULL, NULL, '2008-11-26 03:29:18')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProvince Create (0.3ms)[0m   [0mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Washington', '2008-11-26 03:29:18', NULL, 'WA', NULL, 'US', 'US-WA', NULL, NULL, NULL, NULL, '2008-11-26 03:29:18')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mProvince Create (0.4ms)[0m   [0;1mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('West Virginia', '2008-11-26 03:29:18', NULL, 'WV', NULL, 'US', 'US-WV', NULL, NULL, NULL, NULL, '2008-11-26 03:29:18')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProvince Create (0.3ms)[0m   [0mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Wisconsin', '2008-11-26 03:29:18', NULL, 'WI', NULL, 'US', 'US-WI', NULL, NULL, NULL, NULL, '2008-11-26 03:29:18')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mProvince Create (0.4ms)[0m   [0;1mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Wyoming', '2008-11-26 03:29:18', NULL, 'WY', NULL, 'US', 'US-WY', NULL, NULL, NULL, NULL, '2008-11-26 03:29:18')[0m
+  [4;35;1mSQL (32.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProvince Create (0.4ms)[0m   [0mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Alberta', '2008-11-26 03:29:18', NULL, 'AB', NULL, 'CA', 'CA-AB', NULL, NULL, NULL, NULL, '2008-11-26 03:29:18')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mProvince Create (0.3ms)[0m   [0;1mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('British Columbia', '2008-11-26 03:29:18', NULL, 'BC', NULL, 'CA', 'CA-BC', NULL, NULL, NULL, NULL, '2008-11-26 03:29:18')[0m
+  [4;35;1mSQL (4.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProvince Create (0.4ms)[0m   [0mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Manitoba', '2008-11-26 03:29:18', NULL, 'MB', NULL, 'CA', 'CA-MB', NULL, NULL, NULL, NULL, '2008-11-26 03:29:18')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mProvince Create (1.8ms)[0m   [0;1mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('New Brunswick', '2008-11-26 03:29:18', NULL, 'NB', NULL, 'CA', 'CA-NB', NULL, NULL, NULL, NULL, '2008-11-26 03:29:18')[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProvince Create (0.4ms)[0m   [0mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Newfoundland and Labrador', '2008-11-26 03:29:18', NULL, 'NL', NULL, 'CA', 'CA-NL', NULL, NULL, NULL, NULL, '2008-11-26 03:29:18')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mProvince Create (0.3ms)[0m   [0;1mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Nova Scotia', '2008-11-26 03:29:18', NULL, 'NS', NULL, 'CA', 'CA-NS', NULL, NULL, NULL, NULL, '2008-11-26 03:29:18')[0m
+  [4;35;1mSQL (4.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProvince Create (0.3ms)[0m   [0mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Northwest Territories', '2008-11-26 03:29:18', NULL, 'NT', NULL, 'CA', 'CA-NT', NULL, NULL, NULL, NULL, '2008-11-26 03:29:18')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mProvince Create (0.3ms)[0m   [0;1mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Nunavut', '2008-11-26 03:29:18', NULL, 'NU', NULL, 'CA', 'CA-NU', NULL, NULL, NULL, NULL, '2008-11-26 03:29:18')[0m
+  [4;35;1mSQL (16.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProvince Create (0.4ms)[0m   [0mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Ontario', '2008-11-26 03:29:18', NULL, 'ON', NULL, 'CA', 'CA-ON', NULL, NULL, NULL, NULL, '2008-11-26 03:29:18')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mProvince Create (0.3ms)[0m   [0;1mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Prince Edward Island', '2008-11-26 03:29:18', NULL, 'PE', NULL, 'CA', 'CA-PE', NULL, NULL, NULL, NULL, '2008-11-26 03:29:18')[0m
+  [4;35;1mSQL (3.9ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProvince Create (0.4ms)[0m   [0mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Quebec', '2008-11-26 03:29:18', NULL, 'QC', NULL, 'CA', 'CA-QC', NULL, NULL, NULL, NULL, '2008-11-26 03:29:18')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mProvince Create (0.3ms)[0m   [0;1mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Saskatchewan', '2008-11-26 03:29:18', NULL, 'SK', NULL, 'CA', 'CA-SK', NULL, NULL, NULL, NULL, '2008-11-26 03:29:18')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProvince Create (0.3ms)[0m   [0mINSERT INTO `provinces` (`name`, `updated_at`, `latitude`, `code`, `creator_id`, `country_id`, `id`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Yukon Territory', '2008-11-26 03:29:18', NULL, 'YT', NULL, 'CA', 'CA-YT', NULL, NULL, NULL, NULL, '2008-11-26 03:29:18')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mCity Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `cities`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.4ms)[0m   [0mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Tokyo', '2008-11-26 03:29:23', NULL, NULL, NULL, 'JP', NULL, NULL, 32450000, 8014, NULL, '2008-11-26 03:29:23')[0m
+  [4;36;1mSQL (37.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.3ms)[0m   [0;1mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Seoul', '2008-11-26 03:29:23', NULL, NULL, NULL, 'KR', NULL, NULL, 20550000, 5076, NULL, '2008-11-26 03:29:23')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.2ms)[0m   [0mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Mexico City', '2008-11-26 03:29:23', NULL, NULL, NULL, 'MX', NULL, NULL, 20450000, 7346, NULL, '2008-11-26 03:29:23')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.2ms)[0m   [0;1mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('New York City', '2008-11-26 03:29:23', NULL, NULL, NULL, 'US', NULL, NULL, 19750000, 17884, NULL, '2008-11-26 03:29:23')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.2ms)[0m   [0mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Mumbai', '2008-11-26 03:29:23', NULL, NULL, NULL, 'IN', NULL, NULL, 19200000, 2350, NULL, '2008-11-26 03:29:23')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.2ms)[0m   [0;1mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Jakarta', '2008-11-26 03:29:23', NULL, NULL, NULL, 'ID', NULL, NULL, 18900000, 5100, NULL, '2008-11-26 03:29:23')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.2ms)[0m   [0mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Sao Paulo', '2008-11-26 03:29:23', NULL, NULL, NULL, 'BR', NULL, NULL, 18850000, 8479, NULL, '2008-11-26 03:29:23')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.2ms)[0m   [0;1mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Delhi', '2008-11-26 03:29:23', NULL, NULL, NULL, 'IN', NULL, NULL, 18600000, 3182, NULL, '2008-11-26 03:29:23')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.2ms)[0m   [0mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Osaka-Kobe-Kyoto', '2008-11-26 03:29:23', NULL, NULL, NULL, 'JP', NULL, NULL, 17375000, 6930, NULL, '2008-11-26 03:29:23')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.2ms)[0m   [0;1mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Shanghai', '2008-11-26 03:29:23', NULL, NULL, NULL, 'CN', NULL, NULL, 16650000, 5177, NULL, '2008-11-26 03:29:23')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.2ms)[0m   [0mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Manila', '2008-11-26 03:29:23', NULL, NULL, NULL, 'PH', NULL, NULL, 16300000, 2521, NULL, '2008-11-26 03:29:23')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.2ms)[0m   [0;1mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Hong Kong Shenzhen', '2008-11-26 03:29:23', NULL, NULL, NULL, 'CN', NULL, NULL, 15800000, 3051, NULL, '2008-11-26 03:29:23')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.2ms)[0m   [0mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Los Angeles', '2008-11-26 03:29:23', NULL, NULL, NULL, 'US', NULL, NULL, 15250000, 10780, NULL, '2008-11-26 03:29:23')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.2ms)[0m   [0;1mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Kolkata', '2008-11-26 03:29:23', NULL, NULL, NULL, 'IN', NULL, NULL, 15100000, 1785, NULL, '2008-11-26 03:29:23')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.2ms)[0m   [0mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Moscow', '2008-11-26 03:29:23', NULL, NULL, NULL, 'RU', NULL, NULL, 15000000, 14925, NULL, '2008-11-26 03:29:23')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.2ms)[0m   [0;1mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Cairo', '2008-11-26 03:29:23', NULL, NULL, NULL, 'EG', NULL, NULL, 14450000, 1600, NULL, '2008-11-26 03:29:23')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.2ms)[0m   [0mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Buenos Aires', '2008-11-26 03:29:23', NULL, NULL, NULL, 'AR', NULL, NULL, 13170000, 10888, NULL, '2008-11-26 03:29:23')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.2ms)[0m   [0;1mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('London', '2008-11-26 03:29:23', NULL, NULL, NULL, 'UK', NULL, NULL, 12875000, 11391, NULL, '2008-11-26 03:29:23')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCity Create (0.6ms)[0m   [0mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Beijing', '2008-11-26 03:29:23', NULL, NULL, NULL, 'CN', NULL, NULL, 12500000, 6562, NULL, '2008-11-26 03:29:23')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mCity Create (0.2ms)[0m   [0;1mINSERT INTO `cities` (`name`, `updated_at`, `latitude`, `creator_id`, `province_id`, `country_id`, `airport_code`, `updater_id`, `population`, `area`, `longitude`, `created_at`) VALUES('Karachi', '2008-11-26 03:29:23', NULL, NULL, NULL, 'PK', NULL, NULL, 11800000, 1100, NULL, '2008-11-26 03:29:23')[0m
+  [4;35;1mSQL (12.3ms)[0m   [0mCOMMIT[0m

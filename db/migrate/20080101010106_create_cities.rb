@@ -8,10 +8,11 @@ class CreateCities < ActiveRecord::Migration
       t.column :name,          :string, :null => false
       t.column :latitude,      :float
       t.column :longitude,     :float
-      t.column :province_id,   :integer
-      t.column :country_id,    :integer
+      t.column :province_id,   :string, :limit => 6
+      t.column :country_id,    :string, :null => false, :limit => 2
       t.column :airport_code,  :string, :limit => 3
       t.column :population,    :integer
+      t.column :area,          :integer
     end
 
     add_index :cities, :name
@@ -21,6 +22,7 @@ class CreateCities < ActiveRecord::Migration
     add_index :cities, :country_id
     add_index :cities, :airport_code
     add_index :cities, :population
+    add_index :cities, :area
 
   end
 

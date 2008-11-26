@@ -12,6 +12,7 @@ class CreateCountries < ActiveRecord::Migration
       t.column :latitude,   :float
       t.column :longitude,  :float
       t.column :population, :integer
+      t.column :area,       :integer
     end
 
     execute("ALTER TABLE countries ADD PRIMARY KEY (id)")
@@ -20,6 +21,7 @@ class CreateCountries < ActiveRecord::Migration
     add_index :countries, :latitude
     add_index :countries, :longitude
     add_index :countries, :population
+    add_index :countries, :area
 
   end
 
