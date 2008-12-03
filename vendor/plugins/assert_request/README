@@ -1,0 +1,102 @@
+== AssertRequest
+
+This plugin provides an easy way to make sure that your rails actions are 
+only called with the method, protocol, and parameters that you expect. 
+
+This can save a considerable amount of error-checking code, uncover hidden
+bugs, and prevent security holes. 
+
+== Example
+
+Here's a typical update action:
+
+  def update
+    @person = Person.find params[:id]
+    if @person.update_attributes(params[:person])
+      flash[:notice] = 'Person was successfully updated.'
+      redirect_to :action => 'show', :id => @person
+    else
+      render :action => 'edit'
+    end
+  end
+
+This code works fine as long as the request is always well formed, but we need
+to plan for incomplete, broken, or simply strange requests, both intentional
+and unintentional.
+
+If we were to hand-code all of the contingencies that we might run into while
+dealing with anonymous input from the request, we'd have a pretty messy action
+that's littered with lots of conditions for detecting and dealing with bad
+parameters. 
+
+Instead, we can call assert_request at the beginning of the method to make
+sure that the request contains exactly what we expect. This makes the code far
+more robust, and saves us from writing a considerable amount of error-checking
+code. Here's an example of how we might use assert_request on the same action:
+
+  def update
+    assert_request do |r|
+      r.method :post
+      r.params.must_have :id, Person
+    end
+    # the rest of the action is unchanged
+  end
+
+We've now ensured several things for this action:
+
+* The request method must be POST
+* The params hash contains an "id" attribute
+* The params hash contains a "person" attribute whose value is a hash that 
+  represents the Person model
+
+assert_request examines the Person model, and expands it in place as if you'd
+specified all of its attributes by hand.
+
+Now if we receive a request that doesn't match our specification, then the
+application will raise a RequestError exception, and we'll get a detailed
+message in the logs. In development mode, the exception and its explanation
+will be displayed in the browser. In production mode, a 404 Not Found response
+is returned.
+
+== Installation
+
+Install the plugin by running the following commands from your rails
+application's directory:
+
+  ./script/plugin source svn://rubyforge.org//var/svn/validaterequest/plugins
+  ./script/plugin install assert_request
+
+That's it. You're ready to add calls to assert_request to your actions.
+
+== Documentation
+
+The four assertions that come with this plugin are documented in
+AssertRequest::PublicMethods. If assert_request seems too heavy-handed for
+your needs, the other three are more narrowly targeted:
+
+* assert_params_must_have
+* assert_method
+* assert_protocol
+
+== Patch for Scaffolding
+
+Finally, the plugin includes a patch for the rails scaffold generators (both
+the original and scaffold_resource), so that they include the appropriate
+calls to assert_request when they generate your scaffolding. This might save
+some time, and it can be a good way to see the plugin in actual use. The patch
+is called scaffold_patch.rb, and is located in the plugin source (probably
+under vendor/plugins/assert_request/). You can apply it to your rails
+installation by running it as the superuser (at least on MacOS, Linux, and
+Cygwin):
+
+  sudo ruby scaffold_patch.rb
+
+== Author
+
+  Scott A. Woods
+  West Arete Computing, Inc.
+  http://westarete.com
+  scott at westarete dot com
+
+(c) Copyright 2007 by West Arete Computing, Inc.
+

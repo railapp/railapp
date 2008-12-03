@@ -1,0 +1,51 @@
+* Add support for collections. From the AWDwR book:
+
+    If you need to edit multiple objects from the same model on one form, add
+    open and closed brackets to the name of the instance variable you pass to
+    the form helpers. This tells Rails to include the object’s id as part of
+    the field name. For example, the following template lets a user alter one
+    or more image URLs associated with a list of products.
+
+      <% form_tag do %> 
+        <% for @product in @products %> 
+          <%= text_field("product[]", 'image_url') %><br /> 
+        <% end %> 
+        <%= submit_tag %> 
+      <% end %> 
+
+    When the form is submitted to the controller, params[:product] will be a
+    hash of hashes, where each key is the id of a model object and the
+    corresponding value are the values from the form for that object.
+
+  We could support this using the following notation:
+  
+    assert_request do |r|
+      r.params.must_have [] do |id|
+        id.must_have :image_url
+      end
+    end
+
+  Or to extend it to the logical conclusion of full model support:
+
+    assert_request do |r|
+      r.params.must_have [] do |id|
+        id.is_a Product
+      end
+    end
+
+* Tests don't seem to run at all under win32 native.
+
+* Make new release.
+
+* Blog, post, comment, and email about it. Seek suggestions for improvement.
+
+* (Undecided) Syntactic sugar: Support string-based declarations for nested
+  elements. This is more succinct than block notation when the number of
+  nested params is small. Example:
+
+    assert_params_must_have "[:fido][:name]"
+    
+  would be equivalent to:
+  
+    assert_params_must_have :fido { |f| f.must_have :name }
+
