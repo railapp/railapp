@@ -1,0 +1,9 @@
+*.log
+*~
+*#
+tmp/**/*
+.DS_Store
+nbproject/*
+log/*
+.loadpath
+.project
