@@ -7,14 +7,19 @@ Gem::Specification.new do |s|
   s.email             = "railapp@gmail.com"
   s.homepage          = "http://railapp.com/"
   s.summary           = "RailApp: ruby on rails application starter kit"
-  s.files             = FileList['lib/*.rb', 'test/*'].to_a
+  #s.files             = FileList['lib/*.rb', 'test/*'].to_a
   s.require_path      = "lib"
   s.autorequire       = "railapp"
-  s.test_files        = FileList["{test}/**/*test.rb"].to_a
+  #s.test_files        = FileList["{test}/**/*test.rb"].to_a
   s.has_rdoc          = true
   #s.extra_rdoc_files  = ["README"]
 
   dependencies = "
+
+    authlogic
+    AuthLogic is a clean rails restful authentication solution with a gem instead of a generator.
+    http://authlogic.rubyforge.org/
+    >=1.3.4
 
     rubygems-update
     RubyGems is a package manager for distributing Ruby programs and libraries called gems.
@@ -61,30 +66,20 @@ Gem::Specification.new do |s|
     http://cheat.errtheblog.com/
     >=0.0.0
 
-    zentest
-    ZenTest bundles tools for unit tests, diff, autotest, multiruby, Test:::Rails.
-    http://www.freshports.org/devel/rubygem-zentest/
-    >=3.11.0
-
     hoe
     Hoe is a simple rake/rubygems helper that generates all the usual tasks for projects.
     http://seattlerb.rubyforge.org/hoe/
     >=1.8.2
 
-    authlogic
-    AuthLogic is a clean rails restful authentication solution with a gem instead of a generator.
-    http://authlogic.rubyforge.org/
-    >=1.3.4
+    haml
+    Haml helps generating views in your Rails application by improving ERB and HTML
+    http://haml.hamptoncatlin.com/
+    >=2.0.4
 
-    polyglot
-    Polyglot provides a registry of file types and custom file loaders to require and process files.
-    http://polyglot.rubyforge.org/
-    >=0.2.3
-
-    rack
-    Rack provides an minimal interface between webservers supporting Ruby and Ruby frameworks.
-    http://rack.rubyforge.org/
-    >=0.4.0
+    highline
+    HighLine improves console input/output with error checking, validations, and typecasting.
+    http://highline.rubyforge.org/
+    >=1.5.0
 
     json
     JSON implementation for Ruby using fast compiled bindings
@@ -106,9 +101,19 @@ Gem::Specification.new do |s|
     http://mime-types.rubyforge.org/
     >=1.15.0
 
-    highline
-    HighLine improves console input/output with error checking, validations, and typecasting.
-    http://highline.rubyforge.org/
+    polyglot
+    Polyglot provides a registry of file types and custom file loaders to require and process files.
+    http://polyglot.rubyforge.org/
+    >=0.2.3
+
+    rack
+    Rack provides an minimal interface between webservers supporting Ruby and Ruby frameworks.
+    http://rack.rubyforge.org/
+    >=0.4.0
+
+    random_data
+    random_data generates test data: names, addresses, phone numbers, email addresses, and more..
+    http://www.subelsky.com/labels/random_data.html
     >=1.5.0
 
     rubyinline
@@ -126,10 +131,10 @@ Gem::Specification.new do |s|
     http://selenium.rubyforge.org/getting-started.html
     >=1.1.14
 
-    haml
-    Haml helps generating views in your Rails application by improving ERB and HTML
-    http://haml.hamptoncatlin.com/
-    >=2.0.4
+    zentest
+    ZenTest bundles tools for unit tests, diff, autotest, multiruby, Test:::Rails.
+    http://www.freshports.org/devel/rubygem-zentest/
+    >=3.11.0
 
   "
   dependencies = dependencies.strip.gsub(/^ +/,'').split(/\n\n/).map{|x|x.split(/\n/)}

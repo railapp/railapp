@@ -1,16 +1,23 @@
-== RailApp: ruby on rails application starter
+require 'rubygems'
+Gem::manage_gems
+require 'rake/gempackagetask'
 
-RailApp is a base application for Ruby On Rails web development.
+spec = Gem::Specification.new do |s|
+  s.platform          = Gem::Platform::RUBY
+  s.name              = "railapp"
+  s.version           = "1.0.0"
+  s.author            = "RailApp"
+  s.email             = "railapp@gmail.com"
+  s.homepage          = "http://railapp.com/"
+  s.summary           = "RailApp: ruby on rails application starter kit"
+  s.files             = FileList['lib/*.rb', 'test/*'].to_a
+  s.require_path      = "lib"
+  s.autorequire       = "railapp"
+  s.test_files        = FileList["{test}/**/*test.rb"].to_a
+  s.has_rdoc          = true
+  #s.extra_rdoc_files  = ["README"]
 
-- Download RailApp on GitHub
-- Free and Open Source
-- Built on Ruby On Rails 2.2, Rspec
-- Easy to add user authentication - we recommend the authlogic plugin and tutorial because authlogic is a major improvement over the old restful_authentication generator
-
-
-== What does it download?
-
-RailApp downloads these gems if you need them:
+  dependencies = "
 
     rubygems-update
     RubyGems is a package manager for distributing Ruby programs and libraries called gems.
@@ -83,12 +90,12 @@ RailApp downloads these gems if you need them:
     >=0.4.0
 
     json
-    JSON implementation for Ruby, using fast compiled bindings.
+    JSON implementation for Ruby using fast compiled bindings
     http://json.rubyforge.org/
     >=1.1.3
 
     json_pure
-    JSON implementation for Rub,y using pure ruby processing.
+    JSON implementation for Ruby using pure ruby processing, which is required for JRuby
     http://json.rubyforge.org/
     >=1.1.3
 
@@ -127,35 +134,44 @@ RailApp downloads these gems if you need them:
     http://haml.hamptoncatlin.com/
     >=2.0.4
 
+  "
+  dependencies = dependencies.strip.gsub(/^ +/,'').split(/\n\n/).map{|x|x.split(/\n/)}
 
-== What does it include?
+  ##
+  # Dependencies to consider for next version:
+  #   ruby-debug
+  #   webrat
+  #   nokogiri
+  #   ryanb-acts-as-list
+  #   vpim
+  #   mislav-will_paginate
+  #   rubyforge (1.0.1)
+  #   RubyInline (3.8.1)
+  #   ryanb-acts-as-list (0.1.2)
+  #   term-ansicolor (1.0.3)
+  #   abstract (1.0.0)
+  #   builder (2.1.2)
+  #   diff-lcs (1.1.2)
+  #   erubis (2.6.2)
+  #   mailfactory (1.4.0)
+  #   markaby (0.5)
+  #   net-scp (1.0.1)
+  #   net-sftp (2.0.1)
+  #   net-ssh (2.0.4)
+  #   net-ssh-gateway (1.0.0)
+  #   rubigen (1.3.4)
 
-- Many typical models: users, roles, cities, countries, invoices, goals, etc.
-- Userstamp plug-in which extends ActiveRecord to add automatic updating of 'creator' and 'updater' attributes.
-- A new app/presenter directory for presenters that work with your controllers and views-- see Martin Fowler's Presentation Model
-- Seed data for countries and provinces
+  dependencies.each{|d|
+    name, uri, desc, version, z = d
+    s.add_dependency(name,version)
+  }
 
+end
 
-== Database
+Rake::GemPackageTask.new(spec) do |pkg|
+  pkg.need_tar = true
+end
 
-Many typical ruby on rails applications are read often, write rarely. To help this, we index many database fields to increase read speed and efficiency:
-
-- fields for joins, such as foreign keys
-- fields for sorting, such as dates and times
-- fields for calculations, such as latitude and longitude
-- fields for autocompletions, such as user names and keywords
-
-
-== ISO Standards
-
-Countries use the ISO 3166-2 international standard. For example the United States is "US" and Cananda is "CA". Country subdivisions such as states, provinces, and territories all use ISO 3166 codes. For example, California is "US-CA" and Ontario is "CA-ON".
-
-Languages use ISO 639. For example "en" means "English" and "fr" means "French"
-
-== Seed Data
-
-Seed data is in /lib/tasks/db_seed_*.rake To seed, run these rake tasks:
-
-- rake db:seed:countries
-- rake db:seed:provinces
-
+task :default => "pkg/#{spec.name}-#{spec.version}.gem" do
+  puts "generated latest version"
+end
