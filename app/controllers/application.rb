@@ -1,6 +1,8 @@
 # Filters added to this controller apply to all controllers in the application.
 # Likewise, all the methods added will be available for all controllers.
 
+require 'currentuser'
+
 class ApplicationController < ActionController::Base
  
   # include all helpers, all the time
@@ -15,7 +17,9 @@ class ApplicationController < ActionController::Base
   # from your application log (in this case, all fields with names like "password"). 
   filter_parameter_logging :password
 
-  before_filter :authenticate, :authorize
+  include CurrentUser
+
+  #before_filter :authenticate, :authorize
 
   def redirect_home
     redirect_to '/'
