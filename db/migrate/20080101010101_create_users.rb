@@ -9,12 +9,15 @@ class CreateUsers < ActiveRecord::Migration
       t.column :middle_name, :string
       t.column :last_name,   :string
       t.column :nickname,    :string
+      t.column :username,    :string
+      t.column :password,    :string
     end
-
+      
     add_index :users, :first_name
     add_index :users, :middle_name
     add_index :users, :last_name
     add_index :users, :nickname
+    add_index :users, :username
 
   end
 

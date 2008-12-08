@@ -1,4 +1,4 @@
-class CreatGenders < ActiveRecord::Migration
+class CreateGenders < ActiveRecord::Migration
 
   def self.up
 
