@@ -1,0 +1,38 @@
+/* tables */
+
+table.sortable {
+    background-color: #CDCDCD;
+    margin:10px 0pt 15px;
+    width: 100%;
+    text-align: left;
+}
+table.sortable th {
+    background-color: #e6EEEE;
+    border: 1px solid #FFF;
+    padding: 4px;
+}
+table.sortable .header {
+    background-image: url(bg.gif);
+    background-repeat: no-repeat;
+    background-position: center right;
+  padding-right: 12px;
+  cursor: pointer;
+}
+table.sortable td {
+    color: #3D3D3D;
+    padding: 4px;
+    background-color: #FFF;
+    vertical-align: top;
+}
+
+table.sortable th.headerSortUp {
+    background-color:#ffff88;
+    background-image: url(/javascripts/tablesorter/asc.gif);
+}
+table.sortable th.headerSortDown {
+    background-color:#ffff88;
+    background-image: url(desc.gif);
+}
+table.sortable thead tr .headerSortDown, table.sortable thead tr .headerSortUp {
+background-color: #8dbdd8;
+}
