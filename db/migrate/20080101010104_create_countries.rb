@@ -2,9 +2,11 @@
 
 class CreateCountries < ActiveRecord::Migration
 
+  TABLE = 'countries'
+
   def self.up
 
-    create_table "countries", :id => false, :force => true do |t|
+    create_table TABLE, :id => false, :force => true do |t|
       t.column :id,         :string, :null => false, :limit => 2
       t.timestamps
       t.userstamps
@@ -15,18 +17,18 @@ class CreateCountries < ActiveRecord::Migration
       t.column :area,       :integer
     end
 
-    execute("ALTER TABLE countries ADD PRIMARY KEY (id)")
+    execute("ALTER TABLE #{TABLE} ADD PRIMARY KEY (id)")
 
-    add_index :countries, :name
-    add_index :countries, :latitude
-    add_index :countries, :longitude
-    add_index :countries, :population
-    add_index :countries, :area
+    add_index TABLE, :name
+    add_index TABLE, :latitude
+    add_index TABLE, :longitude
+    add_index TABLE, :population
+    add_index TABLE, :area
 
   end
 
   def self.down
-    drop_table "countries"
+    drop_table TABLE
   end
 
 end

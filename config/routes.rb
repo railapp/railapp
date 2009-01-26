@@ -32,6 +32,12 @@ ActionController::Routing::Routes.draw do |map|
 
   # You can have the root of your site routed with map.root -- just remember to delete public/index.html.
   map.root :controller => "home"
+  map.home 'home', :controller => "home"
+
+  # You can map /signin and /signout to whatever you want;
+  # we map to AuthLogic user_sessions_controller "new" action & "destroy" action
+  map.signin 'signin', :controller => "user_sessions", :action => "new"
+  map.signout 'signout', :controller => "user_sessions", :action => "destroy"
 
   # See how all your routes lay out with "rake routes"
 

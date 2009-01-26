@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20080101010108) do
+ActiveRecord::Schema.define(:version => 20080101010109) do
 
   create_table "cities", :force => true do |t|
     t.datetime "created_at"
@@ -53,6 +53,12 @@ ActiveRecord::Schema.define(:version => 20080101010108) do
   add_index "countries", ["name"], :name => "index_countries_on_name"
   add_index "countries", ["population"], :name => "index_countries_on_population"
 
+  create_table "genders", :force => true do |t|
+    t.string "name", :null => false
+  end
+
+  add_index "genders", ["name"], :name => "index_genders_on_name"
+
   create_table "languages", :force => true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -72,9 +78,11 @@ ActiveRecord::Schema.define(:version => 20080101010108) do
     t.float    "latitude"
     t.float    "longitude"
     t.integer  "population"
+    t.integer  "area"
     t.integer  "city_id"
   end
 
+  add_index "neighborhoods", ["area"], :name => "index_neighborhoods_on_area"
   add_index "neighborhoods", ["city_id"], :name => "index_neighborhoods_on_city_id"
   add_index "neighborhoods", ["latitude"], :name => "index_neighborhoods_on_latitude"
   add_index "neighborhoods", ["longitude"], :name => "index_neighborhoods_on_longitude"
@@ -122,12 +130,29 @@ ActiveRecord::Schema.define(:version => 20080101010108) do
     t.string   "middle_name"
     t.string   "last_name"
     t.string   "nickname"
+    t.string   "username"
+    t.string   "password"
+    t.datetime "born"
+    t.datetime "died"
+    t.string   "gender"
+    t.float    "height"
+    t.float    "weight"
+    t.float    "latitude"
+    t.float    "longitude"
   end
 
+  add_index "users", ["born"], :name => "index_users_on_born"
+  add_index "users", ["died"], :name => "index_users_on_died"
   add_index "users", ["first_name"], :name => "index_users_on_first_name"
+  add_index "users", ["gender"], :name => "index_users_on_gender"
+  add_index "users", ["height"], :name => "index_users_on_height"
   add_index "users", ["last_name"], :name => "index_users_on_last_name"
+  add_index "users", ["latitude"], :name => "index_users_on_latitude"
+  add_index "users", ["longitude"], :name => "index_users_on_longitude"
   add_index "users", ["middle_name"], :name => "index_users_on_middle_name"
   add_index "users", ["nickname"], :name => "index_users_on_nickname"
+  add_index "users", ["username"], :name => "index_users_on_username"
+  add_index "users", ["weight"], :name => "index_users_on_weight"
 
   create_table "users_roles", :force => true do |t|
     t.datetime "created_at"

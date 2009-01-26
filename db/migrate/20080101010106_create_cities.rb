@@ -1,8 +1,10 @@
 class CreateCities < ActiveRecord::Migration
 
+  TABLE = 'cities'
+
   def self.up
 
-    create_table "cities", :force => true do |t|
+    create_table TABLE, :force => true do |t|
       t.timestamps
       t.userstamps
       t.column :name,          :string, :null => false
@@ -15,19 +17,19 @@ class CreateCities < ActiveRecord::Migration
       t.column :area,          :integer
     end
 
-    add_index :cities, :name
-    add_index :cities, :latitude
-    add_index :cities, :longitude
-    add_index :cities, :province_id
-    add_index :cities, :country_id
-    add_index :cities, :airport_code
-    add_index :cities, :population
-    add_index :cities, :area
+    add_index TABLE, :name
+    add_index TABLE, :latitude
+    add_index TABLE, :longitude
+    add_index TABLE, :province_id
+    add_index TABLE, :country_id
+    add_index TABLE, :airport_code
+    add_index TABLE, :population
+    add_index TABLE, :area
 
   end
 
   def self.down
-    drop_table "cities"
+    drop_table TABLE
   end
 
 end

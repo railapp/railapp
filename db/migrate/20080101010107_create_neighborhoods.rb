@@ -1,8 +1,10 @@
 class CreateNeighborhoods < ActiveRecord::Migration
 
+  TABLE = 'neighborhoods'
+
   def self.up
 
-    create_table "neighborhoods", :force => true do |t|
+    create_table TABLE, :force => true do |t|
       t.timestamps
       t.userstamps
       t.column :name,        :string
@@ -13,17 +15,17 @@ class CreateNeighborhoods < ActiveRecord::Migration
       t.column :city_id,     :integer
     end
 
-    add_index :neighborhoods, :name
-    add_index :neighborhoods, :latitude
-    add_index :neighborhoods, :longitude
-    add_index :neighborhoods, :population
-    add_index :neighborhoods, :area
-    add_index :neighborhoods, :city_id
+    add_index TABLE, :name
+    add_index TABLE, :latitude
+    add_index TABLE, :longitude
+    add_index TABLE, :population
+    add_index TABLE, :area
+    add_index TABLE, :city_id
 
   end
 
   def self.down
-    drop_table "neighborhoods"
+    drop_table TABLE
   end
 
 end
